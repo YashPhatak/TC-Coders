@@ -1,2 +1,2 @@
 # TC-Coders
-Smart Shopee
+EduPoint
