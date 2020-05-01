@@ -1,2 +1,2 @@
 # TC-Coders
-EduPoint
+Edu-Point
