@@ -14,6 +14,197 @@ from flask_mail import Message
 def home():
     return render_template('home.html',title='Home')
 
+@app.route("/cart")
+def cart():
+    if current_user.is_authenticated:    
+        return render_template('cart.html',title='Cart')
+    else:
+        return redirect(url_for('login'))
+
+@app.route("/home/menu")
+def menu():
+    return render_template('menu.html', title='Menu')
+
+@app.route("/home/menu/VJTI Books")
+def VJTI_Books():
+    return render_template('EDUPOINT VJTI books.html',title="VJTI Books")
+
+@app.route("/home/menu/VJTI Books/Object-Oriented Programming with C++")
+def balg():
+    return render_template('balg.html',title="Object Oriented Progamming with C++")
+
+@app.route("/home/menu/VJTI Books/Fundamentals of Electric Circuits")
+def alex():
+    return render_template('beeal.html',title="Fundamentals of Electric Circuits")
+
+@app.route("/home/menu/VJTI Books/Design of Machine Elements")
+def bhandari():
+    return render_template('bhandari.html',title="Design of Machine Elements")
+
+@app.route("/home/menu/VJTI Books/Object Oriented Paradigm With C++ Beginners Guide For C & C++")
+def bmeshram():
+    return render_template('bmeshram.html',title="Object Oriented Paradigm With C++ Beginners Guide For C & C++")
+
+@app.route("/home/menu/VJTI Books/A Textbook Of Engineering Chemistry By Shashi Chawla")
+def chawla():
+    return render_template('chawla.html',title="A Textbook Of Engineering Chemistry By Shashi Chawla")
+
+@app.route("/home/menu/VJTI Books/Basic Mechanical Engineering")
+def dom():
+    return render_template('dom.html',title="Basic Mechanical Engineering")
+
+@app.route("/home/menu/VJTI Books/Engineering Drawing by N.D.Bhatt")
+def egbhatt():
+    return render_template('egbhatt.html',title="Engineering Drawing by N.D.Bhatt")
+
+@app.route("/home/menu/VJTI Books/Engineering Drawing By N.H.Dubey")
+def egdubey():
+    return render_template('egdubey.html',title="Engineering Drawing By N.H.Dubey")
+
+@app.route("/home/menu/VJTI Books/Higher Engineering Mathematics By B.S.Grewal")
+def grewal():
+    return render_template('grewal.html',title="Higher Engineering Mathematics By B.S.Grewal")
+
+@app.route("/home/menu/VJTI Books/Engineering Chemistry By Jain and Jain")
+def jain():
+    return render_template('jain.html',title="Engineering Chemistry By Jain and Jain")
+
+@app.route("/home/menu/VJTI Books/A Textbook of Engineering Physics")
+def kshirsagar():
+    return render_template('kshirsagar.html',title="A Textbook of Engineering Physics")
+
+@app.route("/home/menu/VJTI Books/Applied Mathematics-1 By G.V.Kumbhojkar")
+def kumbhojkar():
+    return render_template('kumbhojkar.html',title="Applied Mathematics-1 By G.V.Kumbhojkar")
+
+@app.route("/home/menu/VJTI Books/Applied Mathematics-2 By G.V.Kumbhojkar")
+def kumbhojkar2():
+    return render_template('kumbhojkar2.html',title="Applied Mathematics-2 By G.V.Kumbhojkar")
+
+@app.route("/home/menu/VJTI Books/Let Us C++")
+def lsc():
+    return render_template('lsc+.html',title="Let Us C++")
+
+@app.route("/home/menu/VJTI Books/Engineering Mechanics By M.D.Dayal")
+def mechdayal():
+    return render_template('mechdayal.html',title="Engineering Mechanics By M.D.Dayal")
+
+@app.route("/home/menu/VJTI Books/Engineering Mechanics Statics and Dynamics By N.H.Dubey")
+def mechdubey():
+    return render_template('mechdubey.html',title="Engineering Mechanics Statics and Dynamics By N.H.Dubey")
+
+@app.route("/home/menu/VJTI Books/Basic Electrical Engineering By Ravish Singh")
+def ravish():
+    return render_template('ravish.html',title="Basic Electrical Engineering By Ravish Singh")
+
+@app.route("/home/menu/VJTI Books/SOLUTIONS Engineering Mechanics by M. D. Dayal")
+def soldayal():
+    return render_template('soldayal.html',title="SOLUTIONS Engineering Mechanics by M. D. Dayal")
+
+@app.route("/home/menu/VJTI Books/Companion to Applied Mathematics 1 by G. V. Kumbhojkar")
+def solkumb1():
+    return render_template('solkumb1.html',title="Companion to Applied Mathematics 1 by G. V. Kumbhojkar")
+
+@app.route("/home/menu/VJTI Books/Companion to Applied Mathematics 2 by G. V. Kumbhojkar")
+def solkumb2():
+    return render_template('solkumb2.html',title="Companion to Applied Mathematics 2 by G. V. Kumbhojkar")
+
+@app.route("/home/menu/VJTI Books/Applied Physics-1")
+def wavhal():
+    return render_template('wavhal.html',title="Applied Physics-1")
+
+@app.route("/home/menu/VJTI Books/Applied Physics-2")
+def wavhal2():
+    return render_template('wavhal2.html',title="Applied Physics-2")
+
+@app.route("/home/menu/Engineering Equipments")
+def engeq():
+    return render_template('Engineering Equipments.html',title="Engineering Equipments")
+
+@app.route("/home/menu/Engineering Equipments/Physics")
+def phy():
+    return render_template('EDUPOINT Physics Equipment.html',title="Engineering Equipments") 
+
+@app.route("/home/menu/Engineering Equipments/Electronics")
+def etrx():
+    return render_template('EDUPOINT Electronics Equipment.html',title="Engineering Equipments")
+
+@app.route("/home/menu/Engineering Equipments/Electronics/Accelerometer")
+def acc():
+    return render_template('accelerometer.html',title="Accelerometer")
+
+@app.route("/home/menu/Engineering Equipments/Electronics/Arduino Board")
+def ard():
+    return render_template('Aurdinobored.html',title="Arduino Board") 
+
+@app.route("/home/menu/Engineering Equipments/Electronics/Breadboard")
+def brdb():
+    return render_template('breadbored.html',title="Breadboard")  
+
+@app.route("/home/menu/Engineering Equipments/Electronics/Digital Multimeter")
+def digm():
+    return render_template('digital multimeter.html',title="Digital Multimeter")     
+
+@app.route("/home/menu/Engineering Equipments/Electronics/IR Sensor")
+def irsensor():
+    return render_template('IR sensor.html',title="IR Sensor")
+
+@app.route("/home/menu/Engineering Equipments/Electronics/Lidar Sensor")
+def lidarsensor():
+    return render_template('lidar sensor.html',title="Lidar Sensor")
+
+@app.route("/home/menu/Engineering Equipments/Electronics/Raspberry Pi")
+def rsp():
+    return render_template('rasbery pi.html',title="Raspberry Pi")    
+
+@app.route("/home/menu/Engineering Equipments/Electronics/Soldering Iron")
+def sldiron():
+    return render_template('soldering iron.html',title="Soldering Iron") 
+
+@app.route("/home/menu/Engineering Equipments/Electronics/SquadPixel ESP-32 WiFi , Bluetooth, Dual Core Chip Development Board")
+def esp():
+    return render_template('SquadPixel ESP-32 WiFi , Bluetooth, Dual Core Chip Development Board.html',title="SquadPixel ESP-32 WiFi , Bluetooth, Dual Core Chip Development Board") 
+
+@app.route("/home/menu/Engineering Equipments/Electronics/Transistor")
+def trns():
+    return render_template('transister.html',title="Transistor") 
+
+@app.route("/home/menu/Engineering Equipments/Physics/C.R.O")
+def cro():
+    return render_template('cro.html',title="C.R.O")
+
+@app.route("/home/menu/Engineering Equipments/Physics/Diodes")
+def diode():
+    return render_template('Diodes.html',title="Diodes")    
+
+@app.route("/home/menu/Engineering Equipments/Physics/Four Probe Apparatus")
+def fpa():
+    return render_template('fourproube.html',title="Four Probe Apparatus") 
+
+@app.route("/home/menu/Engineering Equipments/Physics/Micrometer Screw Gauge")
+def mgauge():
+    return render_template('Micrometerscrewgauge.html',title="Micrometer Screw Gauge")
+
+@app.route("/home/menu/Engineering Equipments/Physics/Vernier Caliper")
+def vc():
+    return render_template('verniercaliper.html',title="Vernier Caliper")
+
+@app.route("/home/menu/Engineering Equipments/Physics/Polarimeter")
+def polr():
+    return render_template('polarimeter.html',title="Polarimeter")
+
+@app.route("/home/menu/Engineering Equipments/Physics/Rheostat")
+def rhst():
+    return render_template('Rheostat.html',title="Rheostat")
+
+@app.route("/home/menu/Engineering Equipments/Physics/Spectroscope")
+def spec():
+    return render_template('spectroscope.html',title="Spectroscope")
+
+@app.route("/home/menu/Engineering Equipments/Physics/Travelling Microscope")
+def travelingmicroscope():
+    return render_template('travelingmicroscope.html',title="Travelling Microscope")
+
 @app.route("/about")
 def about():
     return render_template('about.html', title='About')
@@ -90,7 +281,7 @@ def account():
 def send_reset_email(user):
     token=user.get_reset_token()
     msg=Message('Password Reset Request',
-                sender='noreply@demo.com',
+                sender='smtp.googlemail.com',
                 recipients=[user.email])
     msg.body='''To reset your password, visit the following link:
     {url_for('reset_token',token=token,_external=True)}
@@ -129,3 +320,4 @@ def reset_token(token):
         flash('Your password has been updated! You are now able to Log In.', 'success')
         return redirect(url_for('login')) 
     return render_template('reset_token.html',title= 'Reset Password',form=form)
+
