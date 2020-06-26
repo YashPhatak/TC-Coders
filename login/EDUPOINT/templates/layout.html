@@ -1,84 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  {% if title %}
-        <title>EDUPOINT - {{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    {% if title %}
+    <title>EDUPOINT - {{ title }}</title>
     {% else %}
-        <title>EDUPOINT</title>
+    <title>EDUPOINT</title>
     {% endif %}
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            padding-top: 80px;
+            position: relative;
+        }
+        
+        .dropbtn {
+            color: lightgrey;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+    </style>
 </head>
+
 <body>
-<header class="site-header">
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    <header class="site-header">
+        <nav class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">EDUPOINT</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
-       <!-- <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li> -->
-        <li><a  href="{{ url_for('about') }}">About</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        {% if current_user.is_authenticated %} 
-                 <li><a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a></li>
-                 <li><a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a></li>
-              {% else %}
-                 <li><a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a></li>
-                 <li><a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a></li>
-              {% endif %}
-      </ul>
-      <form class="navbar-form navbar-left" >
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search">
-          <div class="input-group-btn">
-            <button class="btn btn-default" type="submit">
+                    <a class="navbar-brand" href="#">EDUPOINT</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn navbar-inverse">Categories</button>
+                                <div class="dropdown-content">
+                                    <a href="/home/menu/generalbooks">General Books</a>
+                                    <a href="#">VJTI Books</a>
+                                    <a href="/home/menu/stationery">Stationery</a>
+                                    <a href="#">Physics Equipments</a>
+                                    <a href="#">Electronics Equipments</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {% if current_user.is_authenticated %}
+                        <li><a class="nav-item nav-link" href="{{ url_for('account') }}"><span class="glyphicon glyphicon-user"></span>  Account</a></li>
+                        <li><a class="nav-item nav-link" href="{{ url_for('cart') }}"><span class="glyphicon glyphicon-shopping-cart"></span>  Cart</a></li>
+                        <li><a class="nav-item nav-link" href="{{ url_for('logout') }}"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
+                        {% else %}
+                        <li><a class="nav-item nav-link" href="{{ url_for('login') }}"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                        <li><a class="nav-item nav-link" href="{{ url_for('register') }}"><span class="glyphicon glyphicon-user"></span>  Register</a></li>
+                        {% endif %}
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
               <i class="glyphicon glyphicon-search"></i>
             </button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</nav>
-</header>
-<main role="main" class="container">
-  <div class="row">
-    <div class="col-md-8">
-      {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-          {% for category, message in messages %}
-            <div class="alert alert-{{ category }}">
-              {{ message }}
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-          {% endfor %}
-        {% endif %}
-      {% endwith %}
-      {% block content %}{% endblock %}
-    </div>
-  
-      </div>
-    </div>
-  </div>
-</main> 
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="row">
+            <!-- <div class="col-md-8"> -->
+            {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+            </div>
+            {% endfor %} {% endif %} {% endwith %} {% block content %}{% endblock %}
+            <!-- </div> -->
+        </div>
+    </main>
 </body>
+
 </html>
