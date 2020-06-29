@@ -205,6 +205,178 @@ def spec():
 def travelingmicroscope():
     return render_template('travelingmicroscope.html',title="Travelling Microscope")
 
+@app.route("/home/menu/generalbooks")
+def generalbooks():
+    return render_template('generalbooks.html', title='Generalbooks')
+
+@app.route("/home/menu/generalbooks/Barrons Reading Workbook For The New SAT")
+def BarronsReadingWorkbookForTheNewSAT():
+    return render_template('Book_1.html', title='Barrons Reading Workbook For The New SAT')
+
+@app.route("/home/menu/generalbooks/Coronavirus:What You Need To Know About The Global Pandemic")
+def CoronavirusPandemic():
+    return render_template('Book_2.html', title='Coronavirus:What You Need To Know About The Global Pandemic')
+
+@app.route("/home/menu/generalbooks/Shuttling To The Top:The Story Of P.V.Sindhu")
+def ShuttlingToTopTheStoryOfPVSindhu():
+    return render_template('Book_3.html', title='Shuttling To The Top:The Story Of P.V.Sindhu')
+
+@app.route("/home/menu/generalbooks/The Lost Symbol")
+def LostSymbol():
+    return render_template('Book_4.html', title='The Lost Symbol')
+
+@app.route("/home/menu/generalbooks/The Da Vinci Code")
+def DaVinciCode():
+    return render_template('Book_5.html', title='The Da Vinci Code')
+
+@app.route("/home/menu/generalbooks/Upstream")
+def Upstream():
+    return render_template('Book_6.html', title='Upstream')
+
+@app.route("/home/menu/generalbooks/Ikigai : The Japanese Secret To A Long And Happy Life")
+def Ikigai():
+    return render_template('Book_7.html', title='Ikigai : The Japanese Secret To A Long And Happy Life')
+
+@app.route("/home/menu/generalbooks/The Alchemist")
+def TheAlchemist():
+    return render_template('Book_8.html', title='The Alchemist')
+
+@app.route("/home/menu/generalbooks/The Great Gatsby")
+def TheGreatGatsby():
+    return render_template('Book_9.html', title='The Great Gatsby')
+
+@app.route("/home/menu/generalbooks/Ghost Flight")
+def GhostFlight():
+    return render_template('Book_10.html', title='Ghost Flight')
+
+@app.route("/home/menu/generalbooks/Immortals Of Meluha Book 1 Of The Shiva Trilogy")
+def ImmortalsOfMeluha():
+    return render_template('Book_11.html', title='Immortals Of Meluha Book 1 Of The Shiva Trilogy')
+
+@app.route("/home/menu/generalbooks/Secret Of The Nagas Book 2 Of The Shiva Trilogy")
+def SecretOfTheNagas():
+    return render_template('Book_12.html', title='Secret Of The Nagas Book 2 Of The Shiva Trilogy')
+
+@app.route("/home/menu/generalbooks/Oath Of The Vayuputras Book 3 Of The Shiva Trilogy")
+def OathOfTheVayuputras():
+    return render_template('Book_13.html', title='Oath Of The Vayuputras Book 3 Of The Shiva Trilogy')
+
+@app.route("/home/menu/generalbooks/Game Query : The Mind Stretching Economist Quiz")
+def GameQuery():
+    return render_template('Book_14.html', title='Game Query : The Mind Stretching Economist Quiz')
+
+@app.route("/home/menu/generalbooks/World Puzzle Championship Challenge : Are You As Bright As The Best")
+def WorldPuzzleChampionshipChallenge():
+    return render_template('Book_15.html', title='World Puzzle Championship Challenge : Are You As Bright As The Best')
+
+@app.route("/home/menu/generalbooks/LEGACY")
+def LEGACY():
+    return render_template('Book_16.html', title='LEGACY')
+
+@app.route("/home/menu/generalbooks/Three Thousand Stitches : Ordinary People Extraordinary Lives")
+def ThreeThousandStitches():
+    return render_template('Book_17.html', title='Three Thousand Stitches : Ordinary People Extraordinary Lives')
+
+@app.route("/home/menu/generalbooks/Hardy Boys : Great Airport Mystery")
+def HardyBoysGreatAirportMystery():
+    return render_template('Book_18.html', title='Hardy Boys : Great Airport Mystery')
+
+@app.route("/home/menu/generalbooks/Hardy Boys : While The Clock Ticked")
+def HardyBoysWhileTheClockTicked():
+    return render_template('Book_19.html', title='Hardy Boys : While The Clock Ticked')
+
+@app.route("/home/menu/generalbooks/Hardy Boys : Mysterious Caravan")
+def HardyBoysMysteriousCaravan():
+    return render_template('Book_20.html', title='Hardy Boys : Mysterious Caravan')
+
+@app.route("/home/menu/generalbooks/Hardy Boys : Clue Of The Broken Blade")
+def HardyBoysClueOfBrokeBlade():
+    return render_template('Book_21.html', title='Hardy Boys : Clue Of The Broken Blade')
+
+@app.route("/home/menu/stationery")
+def stationery():
+    return render_template('stationery.html', title='Stationery')
+
+@app.route("/home/menu/stationery/Apsara Pencil")
+def ApsaraPencil():
+    return render_template('Apsara.html', title='Apsara Pencil')
+
+@app.route("/home/menu/stationery/Amblitz Ambi Spiral Unruled Notebook")
+def AmblitzAmbiSpiralUnruledNotebook():
+    return render_template('blank notebook.html', title='Amblitz Ambi Spiral Unruled Notebook')
+
+@app.route("/home/menu/stationery/Butterflow Pen")
+def ButterflowPen():
+    return render_template('butterflow.html', title='Butterflow Pen')
+
+@app.route("/home/menu/stationery/Classmate Notebook")
+def ClassmateNotebook():
+    return render_template('classmate book.html', title='Classmate Notebook')
+
+@app.route("/home/menu/stationery/Commerce Calculator")
+def CommerceCalculator():
+    return render_template('commerce cal.html', title='Commerce Calculator')
+
+@app.route("/home/menu/stationery/DMOS X1 Pencil")
+def DMOSXPencil():
+    return render_template('DMOS pencil.html', title='DMOS X1 Pencil')
+
+@app.route("/home/menu/stationery/Finegrip Pen")
+def FinegripPen():
+    return render_template('finegrip.html', title='Finegrip Pen')
+
+@app.route("/home/menu/stationery/Folder Files")
+def FolderFiles():
+    return render_template('folder file.html', title='Folder Files')
+
+@app.route("/home/menu/stationery/Camlin Geometry Box")
+def CamlinGeometryBox():
+    return render_template('geometry_box.html', title='Camlin Geometry Box')
+
+@app.route("/home/menu/stationery/HB Pencil")
+def HBPencil():
+    return render_template('HB pencil.html', title='HB Pencil')
+
+@app.route("/home/menu/stationery/Mini Drafter")
+def MiniDrafter():
+    return render_template('mini drafter.html', title='Mini Drafter')
+
+@app.route("/home/menu/stationery/Nataraj Pencil")
+def NatarajPencil():
+    return render_template('nataraj.html', title='Nataraj Pencil')
+
+@app.route("/home/menu/stationery/Classmate Project Paper")
+def ClassmateProjectPaper():
+    return render_template('one side ruled pages.html', title='Classmate Project Paper')
+
+@app.route("/home/menu/stationery/Paper Files")
+def PaperFiles():
+    return render_template('paper files.html', title='Paper Files')
+
+@app.route("/home/menu/stationery/Plastic File")
+def PlasticFile():
+    return render_template('plastic file.html', title='Plastic File')
+
+@app.route("/home/menu/stationery/Pocket Calculator")
+def PocketCalculator():
+    return render_template('Pocket cal.html', title='Pocket Calculator')
+
+@app.route("/home/menu/stationery/Roller Scale")
+def RollerScale():
+    return render_template('roller scale.html', title='Roller Scale')
+
+@app.route("/home/menu/stationery/Scientific Calculator")
+def ScientificCalculator():
+    return render_template('Scientific Cal.html', title='Scientific Calculator')
+
+@app.route("/home/menu/stationery/Reynolds Trimax")
+def ReynoldsTrimax():
+    return render_template('trimax.html', title='Reynolds Trimax')
+
+@app.route("/home/menu/stationery/Use And Throw Pen")
+def UseThrowPen():
+    return render_template('use  and throw pen.html', title='Use And Throw Pen')
+
 @app.route("/about")
 def about():
     return render_template('about.html', title='About')
