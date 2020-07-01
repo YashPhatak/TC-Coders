@@ -1,0 +1,76 @@
+﻿{% extends "layout.html" %} {% block content %}
+<!doctype html>
+<html>
+
+<head>
+    <title>folder Files</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 2px;
+            padding: 60px;
+        }
+        
+        .imgmod {
+            float: left;
+            border: 2px solid black;
+            margin: 10px 20px 10px 0px;
+            width: 300px;
+            height: 360px;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+            color: black;
+            ;
+        }
+        
+        .button1:hover {
+            background-color: #e7e7e7;
+            color: black;
+            ;
+            color: white;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="imgmod" src="/static/images/folder file.jpg" alt="The image of folder  files">
+    <h1><u>Kim Bag House Faux Leather , Portfolio Executive files </u></h1>
+    <h2><u>Price:Rs 200</u></h2>
+    <h2><u>Description:</u></h2>
+    <p><i> Preservation of Certificates and Important Documents, Special Anti-static Transparent PP Pockets for Clear Visibility </i></p>
+    <h2><u>Key Features:</u></h2>
+    <section>
+        <ul>
+            <li><b>Compatible Paper Size: A4 with visitng cardholder </b></li>
+            <li><b> Build Material: Faux leather </b></li>
+            <li><b>20 Leafs and 1 Pen Pocket &amp; many small pockets for flash drives, cd's</b></li>
+        </ul>
+    </section>
+    <button class="button button1" onclick="window.location.href='/cart'">Add to cart</button>
+</body>
+
+</html>
+{% endblock content %}
