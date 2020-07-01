@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Chemistry By Jain and Jain</title>
+    <style>
+        body{
+           
+            margin:2px;
+            padding: 60px;
+            
+        }
+        .center{
+            border-radius: 10px;
+            margin:2px;
+            padding:3px;
+            margin-left:auto;
+            margin-right:auto;
+            width :200px;
+            height:300px;
+            border:5px;
+            border-style: solid;
+            border-color:black;
+            float:left;
+        }
+        button{
+            background-color:white;
+            text-align:center;
+            color:black;
+            cursor:pointer;
+        }
+        
+        ul{
+            font-style: italic;
+            display:inline-block;
+        }
+        
+        </style>
+</head >
+<body>
+    <img class=center src ="\static\Img\j&j.jpg" alt="Image of Book">
+    <p><u><h2>Engineering Chemistry 17th Edition BY Jain and Jain</h2></u> </p>
+    <p><h3><u>Price</u>:Rs.650</h3></p>
+    <section>
+        <p><h3><u>Description</u></h3></p>
+        <p>A textbook of Chemistry with detailed explanation of concepts with solved questions of examination papers across various universities of India.A plethora of solved examples for numericals helping in clarity of concepts.
+        </p>
+        <p><h3><u>Product Details</u></h3></p>
+        <ul>
+    
+           <li><b>Paperback:</b> 1404 pages</li>
+        <li><b>Publisher</b>: Dhanpat Rai Publishing Company</li>
+        <li><b>Language:</b> English</li>
+        <li><b>Package Dimensions:</b> 23.9 x 18.6 x 6.3 cm</li>
+        </ul>
+        </section>
+        <button onclick="window.location.href='/cart'"><h2>Add to Cart</h2></button>
+</body>
+</html>
+
+{% endblock content %}

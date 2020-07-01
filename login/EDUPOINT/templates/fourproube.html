@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<html>
+<head>
+<style>
+	h1{border-width:7px;
+		border-top-color:blue;
+		border-bottom-color:blue;
+		border-left-color:#0FA6F2;
+		border-right-color:#0FA6F2;
+		border-style:solid;
+		padding:15px;
+		background-color:#0FA6F2;
+	}
+	body{background-color:white;
+		padding: 60px;}
+	.central{text-align:left;
+			}
+	
+	.center{text-align:center;}		
+	
+	.imgmod{
+	float:left;
+	border:5px solid black;
+	margin:25px 25px 0px 0px;
+	}
+	
+	.button{
+	border:none;
+	color:white;
+	padding:16px 32px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:;16px;
+	margin:4px 2px;
+	transition-duration:0.4s;
+	cursor:pointer;
+	}
+	
+	.button1{
+	background-color:white;
+	color:black;
+	border:2px solid grey;
+	color:black;
+	}
+	
+	.button1:hover{
+	
+	backgound-color:#e7e7e7;
+	color:black;
+	}
+</style>
+<title>Four Probe Apparatus</title>
+</head>
+<body>
+
+<div class="center">
+<p><h1><b><u>Four Probe Apparatus</u></b></h1></p>
+</div>
+
+<img src="/static/Img/four proube.jpg" width="400" height="" class="imgmod">
+
+<h2 class="central"><u>Price:</u>₹2000.00</h2>
+
+<h2 class="central"><u>Description:</u></h2>
+<p class="central"><i>Four probe method for measuring resistance is also known as Four-terminal sensing or 4T sensing. It is a technique to measure electrical impedance. It uses separate pairs for current carrying and voltage sensing electrodes. This method is capable of making more accurate measurements than two terminal sensing.
+</i></p>
+
+<h2 class="central"><u>Details:</u></h2>
+<p class="central"><i>
+<li><b>Item part number</b>:Be201
+<li><b>Number of parts:</b>5
+<li><b>Temperature:</b>can tolerate high temperatures of up to 175°C-200°C.
+<li><b></b>Can be used for diodes and other semicounductor devices.
+<li><b></b>Digital monitering for more acuracy .
+<li><b></b>Circular adujustable scale for more acuracy.
+<li><b></b>Multiplier scale for sharp measurement.
+</br>
+</br>
+</br>
+</br>
+</i>
+</p>	
+
+<p align="left"><button class="button button1 central" onclick="window.location.href='/cart'">Add To Cart</button></p>
+</body>
+</html>
+{% endblock content %}

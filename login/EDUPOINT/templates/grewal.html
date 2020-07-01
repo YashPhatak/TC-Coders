@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Engineering Mathematics By B.S.Grewal</title>
+    <style>
+        body{
+           
+            margin:2px;
+            padding: 60px;
+            
+        }
+        .center{
+            border-radius: 10px;
+            margin:2px;
+            padding:3px;
+            margin-left:auto;
+            margin-right:auto;
+            width :200px;
+            height:300px;
+            border:5px;
+            border-style: solid;
+            border-color:black;
+            float:left;
+        }
+        button{
+            background-color:white;
+            text-align:center;
+            color:black;
+            cursor:pointer;
+        }
+        
+        ul{
+            font-style: italic;
+            display:inline-block;
+        }
+        
+        </style>
+</head >
+<body>
+    <img class=center src ="\static\Img\grewal.jpg" alt="Image of Book">
+    <p><h2><u>Higher Engineering Mathematics By B.S.Grewal</u></h2> </p>
+    <p><h3><u>Price:</u>Rs.899</h3></p>
+    <section>
+        <p><h3><u>Description</u></h3></p>
+        <p>The book provides a clear exposition of essential tools of applied mathematics from a modern point of view and meets complete requirements of engineering and computer science students. Every effort has been made to keep the presentation at once simple and lucid. It is written with the firm conviction that a good book is one that can be read with minimum guidance from the instructor. To achieve this, more than the usual number of solved examples, followed by properly graded problems have been given. Many of the examples and problems have been selected from recent papers of various university and other engineering examinations. Basic Concepts and Useful Information has been given in an Appendix.</p>
+    <p><h3><u>Product Details</u></h3></p>
+     <ul>
+         <li><b>Paperback:</b>1238 pages</li>
+         <li><b>Language:</b>English</li>
+         <li><b>Publication:</b>KHANNA Publishers</li>
+     </ul></section>
+     <button onclick="window.location.href='/cart'"><h2>Add to Cart</h2></button>
+</body>
+</html>
+
+{% endblock content %}
