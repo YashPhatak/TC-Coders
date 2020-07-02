@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design of Machine Elements</title>
+    <style>
+        body{
+           
+            margin:2px;
+            padding:60px;
+            
+        }
+        .center{
+            border-radius: 10px;
+            margin:2px;
+            padding:3px;
+            margin-left:auto;
+            margin-right:auto;
+            width :200px;
+            height:300px;
+            border:5px;
+            border-style: solid;
+            border-color:black;
+            float:left;
+        }
+        button{
+            background-color:white;
+            text-align:center;
+            color:black;
+            cursor:pointer;
+        }
+        
+        ul{
+            font-style: italic;
+            display:inline-block;
+        }
+        
+        </style>
+</head >
+<body>
+    <img class=center src ="/static/Img\bhandari.jpg" alt="Image of Book">
+    <p ><u><h2>Design of Machine Elements</h2></u> </p>
+    <p><h3><u>Price</u>:Rs.715</h3></p>
+    <section>
+        <p><u><h3>Description</h3></u></p>
+        <p>A handy book in E.M.E. Different changes made are:<ul>
+<li> The content is modified in LO / LoD pattern</li>
+<li>Pedagogical changes</li>
+<li>Addition of latest topics from syllabi</li>
+<li>Inclusion of digital components like QR codes</li>
+
+       <br> </ul>
+<u><b>Key Features:</b></u><ul>
+<li> LOD based approach helpful to secure better marks</li>
+<li> Case studies for exposure to critical design problems</li>
+<li>Objective Type Questions</li>
+<li>Hybridized sections like Quick Digest and solution Guide (will be helpful to perform better in exams)</li>
+</p>
+<p><h3><u>Product Details</u></h3></p>
+<ul>
+    <li><b>Author:</b>V.B.Bhandari</li>
+    <li><b>Paperback:</b>944 Pages</li>
+    <li><b>Language:</b>English</li>
+    <li><b>Pubications:</b>McGraw Hill Education India Private Limited</li>
+
+</ul></section>
+<button onclick="window.location.href='/cart'"><h2>Add to Cart</h2></button> 
+</body>
+</html>
+{% endblock content %}

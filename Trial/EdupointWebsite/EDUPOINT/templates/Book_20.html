@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .cental{
+              text-align: left;
+            }
+            .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            }
+
+            .flex-container .box {
+            width: 90%;
+            margin: 5px;
+            text-align: left;
+            }
+            
+            .imgmod{
+              float: left; 
+              border: 5px solid black;
+              margin: 25px 25px 0px 0px;
+            }
+              
+            
+
+            .button {
+              border: none;
+              color: white;
+              padding: 16px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              transition-duration: 0.4s;
+              cursor: pointer;
+            }
+            
+            .button1 {
+              background-color: white;
+              color: black;
+              border: 2px solid #e7e7e7; color: black;;
+            }
+            
+            .button1:hover {
+              background-color: #e7e7e7; color: black;;
+              color: white;
+            }
+        </style>
+        <title>
+          Hardy Boys : Mysterious Caravan
+        </title>
+    </head>
+    <body style="background-color: white;" >
+    <div class="flex-container">
+      
+      <img src="/static/images/B20.jpg" width="250" height="370" class="imgmod">
+  
+        <div class="box">
+        <h1 style="color: black;" class="cental"><b><u>Hardy Boys : Mysterious Caravan</u></b></h1>
+        <h2 class="cental"><u>Price</u>:Rs250</h2>
+        <h2 class="cental"><u>Description</u>:</h2>
+        <p class="cental" style="font-size: large;"><i>So often, its the simplest acts of courage that touch the lives of others. Sudha Murty-through the exceptional work of the Infosys Foundation as well as through her own youth, family life and travels-encounters many such stories . . . and she tells them here in her characteristically clear-eyed, warm-hearted way. She talks candidly about the meaningful impact of her work in the devadasi community, her trials and tribulations as the only female student in her engineering college and the unexpected and inspiring consequences of her fathers kindness.</i></p>
+        <p class="cental" style="font-size: large;"><i>From the quiet joy of discovering the reach of Indian cinema and the origins of Indian vegetables to the shallowness of judging others based on appearances, these are everyday struggles and victories, large and small. Unmasking both the beauty and ugliness of human nature, each of the real-life stories in this collection is reflective of a life lived with grace.</i></p>
+        <h2 class="cental"><u>Details</u>:</h2>
+        <ul class="cental" style="font-size: large;"><i>
+        <li><b>Author:</b>Franklin W Dixon</li>
+        <li><b>ISBN-13:</b>9780448089546</li>
+        <li><b>Binding:</b>Hard Bound</li>
+        <li><b>Year Of Publishing:</b>1975</li>
+        <li><b>Publisher:</b>Grosset & Dunlap</li>
+        <li><b>Language:</b>English</li>
+      </i></ul>
+      </div>
+     </div> 
+      
+      <button class="button button1 cental " onclick="window.location.href='/cart'">Add to Cart</button>
+
+    </body>
+    
+</html>
+{% endblock content %}

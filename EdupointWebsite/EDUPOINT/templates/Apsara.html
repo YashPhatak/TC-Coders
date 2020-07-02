@@ -1,0 +1,90 @@
+﻿{% extends "layout.html" %} {% block content %}
+<!doctype html>
+<html>
+
+<head>
+    <title>Apsara Pencil</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 2px;
+            padding: 60px;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+        .flex-container .box {
+            width: 90%;
+            margin: 5px;
+            text-align: left;
+        }
+        
+        .imgmod {
+            float: left;
+            border: 2px solid black;
+            margin: 10px 20px 0px 0px;
+            width: 280px;
+            height: 370px;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+            color: black;
+            ;
+        }
+        
+        .button1:hover {
+            background-color: #e7e7e7;
+            color: black;
+            ;
+            color: white;
+        }
+        
+        .h1,
+        h2,
+        h3 {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <img class="imgmod" src="/static/images/apsara.jpg" alt="The image of Apsara  pencil">
+        <div class="box">
+            <h1><u>Apsara Platinum Extra Dark Pencil (Pack of 10 Pencils) </u></h1>
+            <h2><u>Price:Rs 50</u></h2>
+            <h2><u>Description:</u></h2>
+            <p><i> Apsara Platinum Value Pack Pencils, in a pack of 10 is made of high quality wood and features a strong lead that prevents breakage and provides a longer writing life. ... The pencil needs less pressure when writing. The smooth lead core sharpens to a fine, exact point for accurate task.</i></p>
+            <h2><u>Key Features:</u></h2>
+            <section>
+                <ul>
+                    <li><b>2B Grade </b></li>
+                    <li><b>superior bonded lead is strong </b></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <button class="button button1" onclick="window.location.href='/cart'">Add to cart</button>
+</body>
+
+</html>
+{% endblock content %}

@@ -1,0 +1,79 @@
+﻿{% extends "layout.html" %} {% block content %}
+<!doctype html>
+<html>
+
+<head>
+    <title>Classmate Notebook </title>
+    <style>
+        body {
+            background-color: white;
+            margin: 2px;
+            padding: 60px;
+        }
+        
+        .imgmod {
+            float: left;
+            border: 2px solid black;
+            margin: 10px 20px 0px 0px;
+            width: 290px;
+            height: 420px;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+            color: black;
+            ;
+        }
+        
+        .button1:hover {
+            background-color: #e7e7e7;
+            color: black;
+            ;
+            color: white;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="imgmod" src="/static/images/classmate notebook.jpg" alt="The image of classmate  book">
+    <h1><u>Classmate Notebook , Soft Cover, 172 Pages</u></h1>
+    <h2><u>Price:Rs100</u></h2>
+    <h2><u>Description:</u></h2>
+    <p><i>Classmate Notebooks are made to the highest quality standards. Made from superior quality paper and pulp, the pages are whiter, brighter and smoother. The superior cut and excellent finish ensure the pages are in perfect alignment without any folded corners. The superior binding strength and wrapper lamination make them as durable as ever. These notebooks come with a wide variety of covers with activities and trivias to make every classmate notebook unique in its own way. </i></p>
+    <br>
+    <h2><u>Key Features:</u></h2>
+    <section>
+        <ul>
+            <li><b>The cover design of the notebook is subject to change, it depends on stock availability</b></li>
+            <li><b>Notebook - Single Line, 172 Pages, 240mm x 180mm </b></li>
+            <li><b>Notebooks for every subject for hassle-free note-taking during classes or lectures.</b></li>
+            <li><b>Classmate uses elemental chlorine free paper</b></li>
+            <li><b>This notebook consists of high quality papers</b></li>
+        </ul>
+    </section>
+    <b> <button class="button button1" onclick="window.location.href='/cart'">Add to cart</button> </b>
+</body>
+
+</html>
+{% endblock content %}
