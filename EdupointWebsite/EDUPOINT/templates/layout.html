@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    {% if title %}
+    <title>EDUPOINT - {{ title }}</title>
+    {% else %}
+    <title>EDUPOINT</title>
+    {% endif %}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font: 16px Arial;
+        }
+        /*the container must be positioned relative:*/
+        
+        .autocomplete {
+            position: relative;
+            display: inline-block;
+        }
+        
+        input {
+            border: 1px solid transparent;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        input[type=text] {
+            background-color: #f1f1f1;
+            width: 100%;
+        }
+        
+        input[type=submit] {
+            background-color: DodgerBlue;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .autocomplete-items {
+            position: absolute;
+            border: 1px solid #d4d4d4;
+            border-bottom: none;
+            border-top: none;
+            z-index: 99;
+            /*position the autocomplete items to be the same width as the container:*/
+            top: 100%;
+            left: 0;
+            right: 0;
+        }
+        
+        .autocomplete-items div {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            border-bottom: 1px solid #d4d4d4;
+        }
+        /*when hovering an item:*/
+        
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+        /*when navigating through the items using the arrow keys:*/
+        
+        .autocomplete-active {
+            background-color: DodgerBlue !important;
+            color: #ffffff;
+        }
+        
+        body {
+            height: 100%;
+            width: 100%;
+            padding-top: 80px;
+            position: relative;
+        }
+        
+        .dropbtn {
+            color: lightgrey;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                    <a class="navbar-brand" href="/home/menu">EDUPOINT</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="/home/Contact Us">Contact Us</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn navbar-inverse">Categories</button>
+                                <div class="dropdown-content">
+                                    <a href="/home/menu/generalbooks">General Books</a>
+                                    <a href="/home/menu/VJTI Books">VJTI Books</a>
+                                    <a href="/home/menu/stationery">Stationery</a>
+                                    <a href="/home/menu/Engineering Equipments/Physics">Physics Equipments</a>
+                                    <a href="/home/menu/Engineering Equipments/Electronics">Electronics Equipments</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        {% if current_user.is_authenticated %}
+                        <li><a class="nav-item nav-link" href="{{ url_for('account') }}"><span class="glyphicon glyphicon-user"></span>  Account</a></li>
+                        <li><a class="nav-item nav-link" href="{{ url_for('cart') }}"><span class="glyphicon glyphicon-shopping-cart"></span>  Cart</a></li>
+                        <li><a class="nav-item nav-link" href="{{ url_for('logout') }}"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
+                        {% else %}
+                        <li><a class="nav-item nav-link" href="{{ url_for('login') }}"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                        <li><a class="nav-item nav-link" href="{{ url_for('register') }}"><span class="glyphicon glyphicon-user"></span>  Register</a></li>
+
+                        {% endif %}
+                    </ul>
+                    
+                    <form class="navbar-form navbar-left" autocomplete="off">
+                        
+                        <div class="input-group autocomplete">
+                            <input id="myInput" type="text" class="form-control" name= placeholder="Search">
+                    
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" href="" type="submit">
+                                
+                                <i class="glyphicon glyphicon-search"></i>
+                                
+                                </button>
+                            </div>
+                            <script>
+                                function autocomplete(inp, arr) {
+                                    /*the autocomplete function takes two arguments,
+                                    the text field element and an array of possible autocompleted values:*/
+                                    var currentFocus;
+                                    /*execute a function when someone writes in the text field:*/
+                                    inp.addEventListener("input", function(e) {
+                                        var a, b, i, val = this.value;
+                                        /*close any already open lists of autocompleted values*/
+                                        closeAllLists();
+                                        if (!val) {
+                                            return false;
+                                        }
+                                        currentFocus = -1;
+                                        /*create a DIV element that will contain the items (values):*/
+                                        a = document.createElement("DIV");
+                                        a.setAttribute("id", this.id + "autocomplete-list");
+                                        a.setAttribute("class", "autocomplete-items");
+                                        /*append the DIV element as a child of the autocomplete container:*/
+                                        this.parentNode.appendChild(a);
+                                        /*for each item in the array...*/
+                                        for (i = 0; i < arr.length; i++) {
+                                            /*check if the item starts with the same letters as the text field value:*/
+                                            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                                                /*create a DIV element for each matching element:*/
+                                                b = document.createElement("DIV");
+                                                /*make the matching letters bold:*/
+                                                b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                                                b.innerHTML += arr[i].substr(val.length);
+                                                /*insert a input field that will hold the current array item's value:*/
+                                                b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                                                /*execute a function when someone clicks on the item value (DIV element):*/
+                                                b.addEventListener("click", function(e) {
+                                                    /*insert the value for the autocomplete text field:*/
+                                                    inp.value = this.getElementsByTagName("input")[0].value;
+                                                    /*close the list of autocompleted values,
+                                                    (or any other open lists of autocompleted values:*/
+                                                    closeAllLists();
+                        
+                                                });
+                                                a.appendChild(b);
+                                            }
+                                        }
+                                    });
+                                    /*execute a function presses a key on the keyboard:*/
+                                    inp.addEventListener("keydown", function(e) {
+                                        var x = document.getElementById(this.id + "autocomplete-list");
+                                        if (x) x = x.getElementsByTagName("div");
+                                        if (e.keyCode == 40) {
+                                            /*If the arrow DOWN key is pressed,
+                                            increase the currentFocus variable:*/
+                                            currentFocus++;
+                                            /*and and make the current item more visible:*/
+                                            addActive(x);
+                                        } else if (e.keyCode == 38) { //up
+                                            /*If the arrow UP key is pressed,
+                                            decrease the currentFocus variable:*/
+                                            currentFocus--;
+                                            /*and and make the current item more visible:*/
+                                            addActive(x);
+                                        } else if (e.keyCode == 13) {
+                                            /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                                            e.preventDefault();
+                                            if (currentFocus > -1) {
+                                                /*and simulate a click on the "active" item:*/
+                                                if (x) x[currentFocus].click();
+                                            }
+                                        }
+                                    });
+                        
+                        
+                                    function addActive(x) {
+                                        /*a function to classify an item as "active":*/
+                                        if (!x) return false;
+                                        /*start by removing the "active" class on all items:*/
+                                        removeActive(x);
+                                        if (currentFocus >= x.length) currentFocus = 0;
+                                        if (currentFocus < 0) currentFocus = (x.length - 1);
+                                        /*add class "autocomplete-active":*/
+                                        x[currentFocus].classList.add("autocomplete-active");
+                                    }
+                        
+                                    function removeActive(x) {
+                                        /*a function to remove the "active" class from all autocomplete items:*/
+                                        for (var i = 0; i < x.length; i++) {
+                                            x[i].classList.remove("autocomplete-active");
+                                        }
+                                    }
+                        
+                        
+                                    function closeAllLists(elmnt) {
+                                        /*close all autocomplete lists in the document,
+                                        except the one passed as an argument:*/
+                                        var x = document.getElementsByClassName("autocomplete-items");
+                                        for (var i = 0; i < x.length; i++) {
+                                            if (elmnt != x[i] && elmnt != inp) {
+                                                x[i].parentNode.removeChild(x[i]);
+                                            }
+                                        }
+                                    }
+                                    /*execute a function when someone clicks in the document:*/
+                                    document.addEventListener("click", function(e) {
+                                        closeAllLists(e.target);
+                                    });
+                        
+                                }
+                        
+                                /*An array containing all the country names in the world:*/
+                        
+                                var countries = ["Casio HL-4A Portable Calculator", "Casio GST Calculator -MJ-12GST", "Camlin HB drawing pencil (pack of 6)", "Finegrip(Pack of 5Pens)", "Use and throw pen(Pack of 10)", "Apsara Pencil(pack of 10)", "Nataraj pencil (Pack of 10)", "Casio fx-991 EX Classwiz", "GreatDio A4 Folder Case Presentation Line Tansparent Report File(Pack of 10)", "Ace Files 540 GSM 5 Colors Spring File Board(Pack of 10)", "Kim Bag House Folder File", "Omega ROLL-N-DRAW  30 cm Ruler", "Pentagonal Engineering Instruments Mini Drafter", "Classmate Notebook Soft Cover 172 Pages", "Classmate One Side Ruled Assignment Sheet(Pack of 100)", "Amblitz Ambi Spiral Unruled Notebook A4 400 Pages ", "Barrons Reading Workbook For The New SAT", "Coronavirus:What You Need To Know About The Global Pandemic", "Shuttling To The Top:The Story Of P.V.Sindhu", "The Lost Symbol", "The Da Vinci Code", "Upstream", "Ikigai : The Japanese Secret To A Long And Happy Life", "The Alchemist", "The Great Gatsby", "Ghost Flight", "Immortals Of Meluha Book 1 Of The Shiva Trilogy", "Secret Of The Nagas Book 2 Of The Shiva Trilogy", "Oath Of The Vayuputras Book 3 Of The Shiva Trilogy", "Game Query : The Mind Stretching Economist Quiz", "World Puzzle Championship Challenge : Are You As Bright As The Best", "LEGACY", "Three Thousand Stitches : Ordinary People Extraordinary Lives", "Hardy Boys : Great Airport Mystery", "Hardy Boys : While The Clock Ticked", "Hardy Boys : Mysterious Caravan", "Hardy Boys : Clue Of The Broken Blade","A Textbook of Engineering Physics by Kshirsagar and Avadhanulu","Applied Physics-1 by D.Wavhal","Applied Physics-2 by D.Wavhal","Applied Mathematics -1","Applied Mathematics -2","Engineering Mechanics By M.D.Dayal","Engineering Chemistry By Jain and Jain","Let Us C++:Yashwant Kanetkar","Object-Oriented Programming with C++","Engineering Mechanics Statics and Dynamics By N.H.Dubey","Basic Electrical Engineering By Ravish Singh","SOLUTIONS Engineering Mechanics by M. D. Dayal","Companion to Applied Mathematics 1 by G. V. Kumbhojkar","Companion to Applied Mathematics 2 by G. V. Kumbhojkar","Fundamentals of Electric Circuits","Design of Machine Elements","Object Oriented Paradigm With C++ Beginners Guide For C & C++","A Textbook Of Engineering Chemistry By Shashi Chawla","Basic Mechanical Engineering","Engineering Drawing By N.D.Bhatt","Engineering Drawing By N.H.Dubey","Higher Engineering Mathematics By B.S.Grewal","C.R.O.","Diodes","Four Probe Apparatus","Micrometer Screwgauge","Polarimeter","Rheostat","Spectroscope","Travelling Microscope","Vernier Calliper","Accelerometer","Arduino Board","BreadBoard","Digital Multi Tester","IR Sensor","Lidar sensor","Raspberry Pi","Soldering Iron","SquadPixel ESP-32 WiFi , Bluetooth, Dual Core Chip Development Board","Transistor"]
+                                /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+                                autocomplete(document.getElementById("myInput"), countries);
+                               
+
+                            </script>
+                        </form>
+                        </div>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="row">
+            <!-- <div class="col-md-8"> -->
+            {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+                {{ message }}
+            </div>
+            {% endfor %} {% endif %} {% endwith %} {% block content %}{% endblock %}
+            <!-- </div> -->
+        </div>
+    </main>
+   
+    
+</body>
+
+</html>

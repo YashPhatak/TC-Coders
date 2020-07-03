@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .cental{
+              text-align: left;
+            }
+            .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            }
+
+            .flex-container .box {
+            width: 90%;
+            margin: 5px;
+            text-align: left;
+            }
+            
+            .imgmod{
+              float: left; 
+              border: 5px solid black;
+              margin: 25px 25px 0px 0px;
+            }
+              
+            
+
+            .button {
+              border: none;
+              color: white;
+              padding: 16px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              transition-duration: 0.4s;
+              cursor: pointer;
+            }
+            
+            .button1 {
+              background-color: white;
+              color: black;
+              border: 2px solid #e7e7e7; color: black;;
+            }
+            
+            .button1:hover {
+              background-color: #e7e7e7; color: black;;
+              color: white;
+            }
+        </style>
+        <title>
+            Book-10
+        </title>
+    </head>
+    <body style="background-color: white;" >
+    <div class="flex-container">
+      
+      <img src="/static/images/B10.jpg" width="250" height="370" class="imgmod">
+  
+        <div class="box">
+        <h1 style="color: black;" class="cental"><b><u>Ghost Flight</u></b></h1>
+        <h2 class="cental"><u>Price</u>:499</h2>
+        <h2 class="cental"><u>Description</u>:</h2>
+        <p class="cental" style="font-size: large;"><i>Author of MUD, SWEAT AND TEARS and star of MAN VS. WILD and THE ISLAND, Bear Grylls delivers his action-packed debut novel - the start of a major new adventure series.</i></p>
+        <p class="cental" style="font-size: large;"><i>THE BOURNE IDENTITY meets Indiana Jones - a debut thriller to take your breath away. A mother and child savagely abducted from a snow-swept mountainside.
+
+            A loyal soldier tortured and executed on a remote Scottish moor.
+            
+            A lost warplane discovered in the heart of the Amazon jungle, harbouring a secret of earth-shattering evil.
+            
+            A desperate race to defeat a terrifying conspiracy emanating from the darkest days of Nazi Germany.
+            
+            One thread unites them all.
+            
+            Only one man can unravel it.
+            
+            Will Jaeger. The Hunter.</i></p>
+        <h2 class="cental"><u>Details</u>:</h2>
+        <ul class="cental" style="font-size: large;"><i>
+        <li><b>Author:</b>Bear Grylls</li>
+        <li><b>ISBN-13:</b>9781409156833</li>
+        <li><b>Binding:</b>Paperback</li>
+        <li><b>Year Of Publishing:</b>2016</li>
+        <li><b>Publisher:</b>Orion Books Limited</li>
+        <li><b>Language:</b>English</li>
+      </i></ul>
+      </div>
+     </div> 
+      
+      <button class="button button1 cental " onclick="window.location.href='/cart'">Add to Cart</button>
+
+    </body>
+    
+</html>
+{% endblock content %}
