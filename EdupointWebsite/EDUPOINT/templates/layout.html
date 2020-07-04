@@ -141,7 +141,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
                         <li><a href="{{ url_for('about') }}">About</a></li>
-                        <li><a href="/home/Contact Us">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
                         <li>
                             <div class="dropdown">
                                 <button class="dropbtn navbar-inverse">Categories</button>
@@ -166,12 +166,12 @@
 
                         {% endif %}
                     </ul>
-                    
+
                     <form class="navbar-form navbar-left" autocomplete="off">
-                        
+
                         <div class="input-group autocomplete">
-                            <input id="myInput" type="text" class="form-control" name= placeholder="Search">
-                    
+                            <input id="myInput" type="text" class="form-control" name=p laceholder="Search">
+
                             <div class="input-group-btn">
                                 <button class="btn btn-default" href="" type="submit">
                                 
@@ -214,10 +214,85 @@
                                                 b.addEventListener("click", function(e) {
                                                     /*insert the value for the autocomplete text field:*/
                                                     inp.value = this.getElementsByTagName("input")[0].value;
+                                                    if ((inp.value.localeCompare("Barrons Reading Workbook For The New SAT")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Barrons Reading Workbook For The New SAT"
+                                                    } else if ((inp.value.localeCompare("Coronavirus:What You Need To Know About The Global Pandemic")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Coronavirus:What You Need To Know About The Global Pandemic"
+                                                    } else if ((inp.value.localeCompare("Shuttling To The Top:The Story Of P.V.Sindhu")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Shuttling To The Top:The Story Of P.V.Sindhu"
+                                                    } else if ((inp.value.localeCompare("The Lost Symbol")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/The Lost Symbol"
+                                                    } else if ((inp.value.localeCompare("The Da Vinci Code")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/The Da Vinci Code"
+                                                    } else if ((inp.value.localeCompare("Upstream")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Upstream"
+                                                    } else if ((inp.value.localeCompare("Ikigai : The Japanese Secret To A Long And Happy Life")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Ikigai : The Japanese Secret To A Long And Happy Life"
+                                                    } else if ((inp.value.localeCompare("The Alchemist")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/The Alchemist"
+                                                    } else if ((inp.value.localeCompare("The Great Gatsby")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/The Great Gatsby"
+                                                    } else if ((inp.value.localeCompare("Ghost Flight")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Ghost Flight"
+                                                    } else if ((inp.value.localeCompare("Immortals Of Meluha Book 1 Of The Shiva Trilogy")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Immortals Of Meluha Book 1 Of The Shiva Trilogy"
+                                                    } else if ((inp.value.localeCompare("Secret Of The Nagas Book 2 Of The Shiva Trilogy")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Secret Of The Nagas Book 2 Of The Shiva Trilogy"
+                                                    } else if ((inp.value.localeCompare("Oath Of The Vayuputras Book 3 Of The Shiva Trilogy")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Oath Of The Vayuputras Book 3 Of The Shiva Trilogy"
+                                                    } else if ((inp.value.localeCompare("Game Query : The Mind Stretching Economist Quiz")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Game Query : The Mind Stretching Economist Quiz"
+                                                    } else if ((inp.value.localeCompare("World Puzzle Championship Challenge : Are You As Bright As The Best")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/World Puzzle Championship Challenge : Are You As Bright As The Best"
+                                                    } else if ((inp.value.localeCompare("LEGACY")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/LEGACY"
+                                                    } else if ((inp.value.localeCompare("Three Thousand Stitches : Ordinary People Extraordinary Lives")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Three Thousand Stitches : Ordinary People Extraordinary Lives"
+                                                    } else if ((inp.value.localeCompare("Hardy Boys : Great Airport Mystery")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Hardy Boys : Great Airport Mystery"
+                                                    } else if ((inp.value.localeCompare("Hardy Boys : While The Clock Ticked")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Hardy Boys : While The Clock Ticked"
+                                                    } else if ((inp.value.localeCompare("Hardy Boys : Mysterious Caravan")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Hardy Boys : Mysterious Caravan"
+                                                    } else if ((inp.value.localeCompare("Hardy Boys : Clue Of The Broken Blade")) == 0) {
+                                                        location.href = "/home/menu/generalbooks/Hardy Boys : Clue Of The Broken Blade"
+                                                    } else if ((inp.value.localeCompare("Apsara Pencil(pack of 10)")) == 0) {
+                                                        location.href = "/home/menu/stationery/Apsara Pencil"
+                                                    } else if ((inp.value.localeCompare("Amblitz Ambi Spiral Unruled Notebook A4 400 Pages ")) == 0) {
+                                                        location.href = "/home/menu/stationery/Amblitz Ambi Spiral Unruled Notebook"
+                                                    } else if ((inp.value.localeCompare("Classmate Notebook Soft Cover 172 Pages")) == 0) {
+                                                        location.href = "/home/menu/stationery/Classmate Notebook"
+                                                    } else if ((inp.value.localeCompare("Casio GST Calculator -MJ-12GST")) == 0) {
+                                                        location.href = "/home/menu/stationery/Commerce Calculator"
+                                                    } else if ((inp.value.localeCompare("Finegrip(Pack of 5Pens)")) == 0) {
+                                                        location.href = "/home/menu/stationery/Finegrip Pen"
+                                                    } else if ((inp.value.localeCompare("Kim Bag House Folder File")) == 0) {
+                                                        location.href = "/home/menu/stationery/Folder Files"
+                                                    } else if ((inp.value.localeCompare("Camlin HB drawing pencil (pack of 6)")) == 0) {
+                                                        location.href = "/home/menu/stationery/HB Pencil"
+                                                    } else if ((inp.value.localeCompare("Pentagonal Engineering Instruments Mini Drafter")) == 0) {
+                                                        location.href = "/home/menu/stationery/Mini Drafter"
+                                                    } else if ((inp.value.localeCompare("Nataraj pencil (Pack of 10)")) == 0) {
+                                                        location.href = "/home/menu/stationery/Nataraj Pencil"
+                                                    } else if ((inp.value.localeCompare("Classmate One Side Ruled Assignment Sheet(Pack of 100)")) == 0) {
+                                                        location.href = "/home/menu/stationery/Classmate Project Paper"
+                                                    } else if ((inp.value.localeCompare("Ace Files 540 GSM 5 Colors Spring File Board(Pack of 10)")) == 0) {
+                                                        location.href = "/home/menu/stationery/Paper Files"
+                                                    } else if ((inp.value.localeCompare("GreatDio A4 Folder Case Presentation Line Tansparent Report File(Pack of 10)")) == 0) {
+                                                        location.href = "/home/menu/stationery/Plastic File"
+                                                    } else if ((inp.value.localeCompare("Casio HL-4A Portable Calculator")) == 0) {
+                                                        location.href = "/home/menu/stationery/Pocket Calculator"
+                                                    } else if ((inp.value.localeCompare("Omega ROLL-N-DRAW  30 cm Ruler")) == 0) {
+                                                        location.href = "/home/menu/stationery/Roller Scale"
+                                                    } else if ((inp.value.localeCompare("Casio fx-991 EX Classwiz")) == 0) {
+                                                        location.href = "/home/menu/stationery/Scientific Calculator"
+                                                    } else if ((inp.value.localeCompare("Use and throw pen(Pack of 10)")) == 0) {
+                                                        location.href = "/home/menu/stationery/Use And Throw Pen"
+                                                    }
                                                     /*close the list of autocompleted values,
                                                     (or any other open lists of autocompleted values:*/
                                                     closeAllLists();
-                        
+
                                                 });
                                                 a.appendChild(b);
                                             }
@@ -248,8 +323,8 @@
                                             }
                                         }
                                     });
-                        
-                        
+
+
                                     function addActive(x) {
                                         /*a function to classify an item as "active":*/
                                         if (!x) return false;
@@ -260,15 +335,15 @@
                                         /*add class "autocomplete-active":*/
                                         x[currentFocus].classList.add("autocomplete-active");
                                     }
-                        
+
                                     function removeActive(x) {
                                         /*a function to remove the "active" class from all autocomplete items:*/
                                         for (var i = 0; i < x.length; i++) {
                                             x[i].classList.remove("autocomplete-active");
                                         }
                                     }
-                        
-                        
+
+
                                     function closeAllLists(elmnt) {
                                         /*close all autocomplete lists in the document,
                                         except the one passed as an argument:*/
@@ -283,19 +358,17 @@
                                     document.addEventListener("click", function(e) {
                                         closeAllLists(e.target);
                                     });
-                        
-                                }
-                        
-                                /*An array containing all the country names in the world:*/
-                        
-                                var countries = ["Casio HL-4A Portable Calculator", "Casio GST Calculator -MJ-12GST", "Camlin HB drawing pencil (pack of 6)", "Finegrip(Pack of 5Pens)", "Use and throw pen(Pack of 10)", "Apsara Pencil(pack of 10)", "Nataraj pencil (Pack of 10)", "Casio fx-991 EX Classwiz", "GreatDio A4 Folder Case Presentation Line Tansparent Report File(Pack of 10)", "Ace Files 540 GSM 5 Colors Spring File Board(Pack of 10)", "Kim Bag House Folder File", "Omega ROLL-N-DRAW  30 cm Ruler", "Pentagonal Engineering Instruments Mini Drafter", "Classmate Notebook Soft Cover 172 Pages", "Classmate One Side Ruled Assignment Sheet(Pack of 100)", "Amblitz Ambi Spiral Unruled Notebook A4 400 Pages ", "Barrons Reading Workbook For The New SAT", "Coronavirus:What You Need To Know About The Global Pandemic", "Shuttling To The Top:The Story Of P.V.Sindhu", "The Lost Symbol", "The Da Vinci Code", "Upstream", "Ikigai : The Japanese Secret To A Long And Happy Life", "The Alchemist", "The Great Gatsby", "Ghost Flight", "Immortals Of Meluha Book 1 Of The Shiva Trilogy", "Secret Of The Nagas Book 2 Of The Shiva Trilogy", "Oath Of The Vayuputras Book 3 Of The Shiva Trilogy", "Game Query : The Mind Stretching Economist Quiz", "World Puzzle Championship Challenge : Are You As Bright As The Best", "LEGACY", "Three Thousand Stitches : Ordinary People Extraordinary Lives", "Hardy Boys : Great Airport Mystery", "Hardy Boys : While The Clock Ticked", "Hardy Boys : Mysterious Caravan", "Hardy Boys : Clue Of The Broken Blade","A Textbook of Engineering Physics by Kshirsagar and Avadhanulu","Applied Physics-1 by D.Wavhal","Applied Physics-2 by D.Wavhal","Applied Mathematics -1","Applied Mathematics -2","Engineering Mechanics By M.D.Dayal","Engineering Chemistry By Jain and Jain","Let Us C++:Yashwant Kanetkar","Object-Oriented Programming with C++","Engineering Mechanics Statics and Dynamics By N.H.Dubey","Basic Electrical Engineering By Ravish Singh","SOLUTIONS Engineering Mechanics by M. D. Dayal","Companion to Applied Mathematics 1 by G. V. Kumbhojkar","Companion to Applied Mathematics 2 by G. V. Kumbhojkar","Fundamentals of Electric Circuits","Design of Machine Elements","Object Oriented Paradigm With C++ Beginners Guide For C & C++","A Textbook Of Engineering Chemistry By Shashi Chawla","Basic Mechanical Engineering","Engineering Drawing By N.D.Bhatt","Engineering Drawing By N.H.Dubey","Higher Engineering Mathematics By B.S.Grewal","C.R.O.","Diodes","Four Probe Apparatus","Micrometer Screwgauge","Polarimeter","Rheostat","Spectroscope","Travelling Microscope","Vernier Calliper","Accelerometer","Arduino Board","BreadBoard","Digital Multi Tester","IR Sensor","Lidar sensor","Raspberry Pi","Soldering Iron","SquadPixel ESP-32 WiFi , Bluetooth, Dual Core Chip Development Board","Transistor"]
-                                /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-                                autocomplete(document.getElementById("myInput"), countries);
-                               
 
+                                }
+
+                                /*An array containing all the country names in the world:*/
+
+                                var countries = ["Casio HL-4A Portable Calculator", "Casio GST Calculator -MJ-12GST", "Camlin HB drawing pencil (pack of 6)", "Finegrip(Pack of 5Pens)", "Use and throw pen(Pack of 10)", "Apsara Pencil(pack of 10)", "Nataraj pencil (Pack of 10)", "Casio fx-991 EX Classwiz", "GreatDio A4 Folder Case Presentation Line Tansparent Report File(Pack of 10)", "Ace Files 540 GSM 5 Colors Spring File Board(Pack of 10)", "Kim Bag House Folder File", "Omega ROLL-N-DRAW  30 cm Ruler", "Pentagonal Engineering Instruments Mini Drafter", "Classmate Notebook Soft Cover 172 Pages", "Classmate One Side Ruled Assignment Sheet(Pack of 100)", "Amblitz Ambi Spiral Unruled Notebook A4 400 Pages ", "Barrons Reading Workbook For The New SAT", "Coronavirus:What You Need To Know About The Global Pandemic", "Shuttling To The Top:The Story Of P.V.Sindhu", "The Lost Symbol", "The Da Vinci Code", "Upstream", "Ikigai : The Japanese Secret To A Long And Happy Life", "The Alchemist", "The Great Gatsby", "Ghost Flight", "Immortals Of Meluha Book 1 Of The Shiva Trilogy", "Secret Of The Nagas Book 2 Of The Shiva Trilogy", "Oath Of The Vayuputras Book 3 Of The Shiva Trilogy", "Game Query : The Mind Stretching Economist Quiz", "World Puzzle Championship Challenge : Are You As Bright As The Best", "LEGACY", "Three Thousand Stitches : Ordinary People Extraordinary Lives", "Hardy Boys : Great Airport Mystery", "Hardy Boys : While The Clock Ticked", "Hardy Boys : Mysterious Caravan", "Hardy Boys : Clue Of The Broken Blade", "A Textbook of Engineering Physics by Kshirsagar and Avadhanulu", "Applied Physics-1 by D.Wavhal", "Applied Physics-2 by D.Wavhal", "Applied Mathematics -1", "Applied Mathematics -2", "Engineering Mechanics By M.D.Dayal", "Engineering Chemistry By Jain and Jain", "Let Us C++:Yashwant Kanetkar", "Object-Oriented Programming with C++", "Engineering Mechanics Statics and Dynamics By N.H.Dubey", "Basic Electrical Engineering By Ravish Singh", "SOLUTIONS Engineering Mechanics by M. D. Dayal", "Companion to Applied Mathematics 1 by G. V. Kumbhojkar", "Companion to Applied Mathematics 2 by G. V. Kumbhojkar", "Fundamentals of Electric Circuits", "Design of Machine Elements", "Object Oriented Paradigm With C++ Beginners Guide For C & C++", "A Textbook Of Engineering Chemistry By Shashi Chawla", "Basic Mechanical Engineering", "Engineering Drawing By N.D.Bhatt", "Engineering Drawing By N.H.Dubey", "Higher Engineering Mathematics By B.S.Grewal", "C.R.O.", "Diodes", "Four Probe Apparatus", "Micrometer Screwgauge", "Polarimeter", "Rheostat", "Spectroscope", "Travelling Microscope", "Vernier Calliper", "Accelerometer", "Arduino Board", "BreadBoard", "Digital Multi Tester", "IR Sensor", "Lidar sensor", "Raspberry Pi", "Soldering Iron", "SquadPixel ESP-32 WiFi , Bluetooth, Dual Core Chip Development Board", "Transistor"]
+                                    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+                                autocomplete(document.getElementById("myInput"), countries);
                             </script>
-                        </form>
-                        </div>
+                    </form>
+                    </div>
                 </div>
             </div>
 
@@ -313,8 +386,8 @@
             <!-- </div> -->
         </div>
     </main>
-   
-    
+
+
 </body>
 
 </html>
