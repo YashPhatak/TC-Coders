@@ -1,0 +1,78 @@
+﻿{% extends "layout.html" %} {% block content %}
+<!doctype html>
+<html>
+
+<head>
+    <title>Scientific Calculator</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 2px;
+            padding: 60px;
+        }
+        
+        .imgmod {
+            float: left;
+            border: 2px solid black;
+            margin: 10px 20px 0px 0px;
+            width: 300px;
+            height: 450px;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+            color: black;
+            ;
+        }
+        
+        .button1:hover {
+            background-color: #e7e7e7;
+            color: black;
+            ;
+            color: white;
+        }
+        
+        h1,
+        h2,
+        h3 {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="imgmod" src="/static/images/main.png" alt="The image of scientific calculator">
+    <h1><u>Casio fx-991EX Classwiz </u></h1>
+    <h2><u>Price:Rs 1249</u></h2>
+    <h2><u>Description:</u></h2>
+    <p><i>Casio fx-991EX Classwiz is the most advanced non-programable scientific calculator from Casio. This has 552 functions including Integration, Differentiation, Polynomial Simultaneous Equation Solver, Matrix, Vector calculation etc. It has four-times better resolution for easy viewing. It also has Natural Textbook Display so that you can type and see algebraic functions the way it is written in your books.</i></p>
+    <br>
+    <h2><u>Key Features:</u></h2>
+    <section>
+        <ul>
+            <li><b>Non-Programmable Scientific Calculator with 552 Functions</b></li>
+            <li><b>4-times better resolution than Casio 991ES Plus for easier viewing on long expressions</b></li>
+            <li><b>Natural Textbook Display- Input and display fractions, powers, logarithms, roots, and other mathematical formulas and symbol just as they appear in textbooks</b></li>
+            <li><b>3 Years All India Manufacturer Warranty</b></li>
+        </ul>
+    </section>
+    <button class="button button1 " onclick="window.location.href='/cart'">Add to cart</button>
+</body>
+
+</html>
+{% endblock content %}

@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .cental{
+              text-align: left;
+            }
+            .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            }
+
+            .flex-container .box {
+            width: 90%;
+            margin: 5px;
+            text-align: left;
+            }
+            
+            .imgmod{
+              float: left; 
+              border: 5px solid black;
+              margin: 25px 25px 0px 0px;
+            }
+              
+            
+
+            .button {
+              border: none;
+              color: white;
+              padding: 16px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              transition-duration: 0.4s;
+              cursor: pointer;
+            }
+            
+            .button1 {
+              background-color: white;
+              color: black;
+              border: 2px solid #e7e7e7; color: black;;
+            }
+            
+            .button1:hover {
+              background-color: #e7e7e7; color: black;;
+              color: white;
+            }
+        </style>
+        <title>
+            Book-6
+        </title>
+    </head>
+    <body style="background-color: white;" >
+    <div class="flex-container">
+      
+      <img src="/static/images/B6.jpg" width="250" height="370" class="imgmod">
+  
+        <div class="box">
+        <h1 style="color: black;" class="cental"><b><u>Upstream</u></b></h1>
+        <h2 class="cental"><u>Price</u>:Rs799</h2>
+        <h2 class="cental"><u>Description</u>:</h2>
+        <p class="cental" style="font-size: large;"><i>Packed with vivid stories and practical examples, Upstream is the rare book that can both revitalize your business and make our world a better place.New York Times bestselling author Dan Heath asks what happens when we take our thinking upstream and try to prevent problems before they happen.</i></p>
+        <p class="cental" style="font-size: large;"><i>The notion of preventing problems is an evergreen need in our professional and daily lives which makes Upstream a book for skeptical optimists-across all sectors.Drawing on insights from Dan Heaths extensive research, as well as hundreds of new interviews with unconventional problem solvers, he delivers practical solutions for preventing problems rather than simply reacting to them.</i></p>
+        <h2 class="cental"><u>Details</u>:</h2>
+        <ul class="cental" style="font-size: large;"><i>
+        <li><b>Author:</b>Dan Heath</li>
+        <li><b>ISBN-13:</b>9781787632745</li>
+        <li><b>Binding:</b>Trade Paperback</li>
+        <li><b>Year Of Publishing:</b>2020</li>
+        <li><b>Publisher:</b>Bantam Press</li>
+        <li><b>Language:</b>English</li>
+      </i></ul>
+      </div>
+     </div> 
+      
+      <button class="button button1 cental " onclick="window.location.href='/cart'">Add to Cart</button>
+
+    </body>
+    
+</html>
+{% endblock content %}

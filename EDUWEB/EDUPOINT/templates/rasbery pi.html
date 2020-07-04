@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% block content %}
+<html>
+<head>
+<style>
+	h1{border-width:7px;
+		border-top-color:blue;
+		border-bottom-color:blue;
+		border-left-color:#0FA6F2;
+		border-right-color:#0FA6F2;
+		border-style:solid;
+		padding:15px;
+		background-color:#0FA6F2;
+	}
+	body{background-color:white;padding: 60px;}
+	.central{text-align:left;
+			}
+	
+	.center{text-align:center;}		
+	
+	.imgmod{
+	float:left;
+	border:5px solid black;
+	margin:25px 25px 0px 0px;
+	}
+	
+	.button{
+	border:none;
+	color:white;
+	padding:16px 32px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:;16px;
+	margin:4px 2px;
+	transition-duration:0.4s;
+	cursor:pointer;
+	}
+	
+	.button1{
+	background-color:white;
+	color:black;
+	border:2px solid grey;
+	color:black;
+	}
+	
+	.button1:hover{
+	
+	background-color:#e7e7e7;
+	color:black;
+	}
+</style>
+<title>Raspbery pi</title>
+</head>
+<body>
+
+<div class="center">
+<p><h1><b><u>Raspbery pi</u></b></h1></p>
+</div>
+
+<img src="/static/Img/rasbery pi.jpg" width="500" height="500" class="imgmod">
+
+<h2 class="cenral"><u>Price:</u>₹ 4200.00</h2>
+
+<h2 class="cenral"><u>Description:</u></h2>
+<p class="cenral"><i>Your new desktop computer The speed and performance of the new Raspberry Pi 4 is a step up from earlier models. For the first time, we've built a complete desktop experience. Whether you're editing documents, browsing the web with a bunch of tabs open, juggling spreadsheets or drafting a presentation, you'll find the experience smooth and very recognisable — but on a smaller, more energy-efficient and much more cost-effective machine.</i></p>
+
+<h2 class="cenral"><u>Details:</u></h2>
+<p class="central"><i>
+<li><b>Item part number</b>:rasp-pi-4-B
+<li><b>Number of parts:</b>1
+<li><b></b>Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz
+<li><b></b>1GB LPDDR4-2400 SDRAM (depending on model)
+<li><b></b>2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE , Gigabit Ethernet
+<li><b></b>2 USB 3.0 ports; 2 USB 2.0 ports.
+<li><b></b>2× micro-HDMI ports (up to 4kp60 supported)
+<li><b></b>2-lane MIPI DSI display port
+<li><b></b>2-lane MIPI CSI camera port
+<li><b></b>4-pole stereo audio and composite video port
+<li><b></b>H.265 (4kp60 decode), H264 (1080p60 decode, 1080p30 encode)
+<li><b></b>5V DC via USB-C connector (minimum 3A*)
+</i></br></br>
+</p>	
+
+<p align="left"><button class="button button1 central" onclick="window.location.href='/cart'">Add To Cart</button></p>
+</body>
+</html>
+
+{% endblock content %}
