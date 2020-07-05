@@ -1,72 +1,76 @@
-{% extends "layout.html" %}
-{% block content %}
+{% extends "layout.html" %} {% block content %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .cental{
-              text-align: left;
-            }
-            .flex-container {
+
+<head>
+    <style>
+        .cental {
+            text-align: left;
+        }
+        
+        .flex-container {
             display: flex;
             flex-wrap: nowrap;
-            }
-
-            .flex-container .box {
+        }
+        
+        .flex-container .box {
             width: 90%;
             margin: 5px;
             text-align: left;
-            }
-            
-            .imgmod{
-              float: left; 
-              border: 5px solid black;
-              margin: 25px 25px 0px 0px;
-            }
-              
-            
+        }
+        
+        .imgmod {
+            float: left;
+            border: 5px solid black;
+            margin: 25px 25px 0px 0px;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+            color: black;
+            ;
+        }
+        
+        .button1:hover {
+            background-color: #e7e7e7;
+            color: black;
+            ;
+            color: white;
+        }
+    </style>
+    <title>
+        Book-8
+    </title>
+</head>
 
-            .button {
-              border: none;
-              color: white;
-              padding: 16px 32px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 16px;
-              margin: 4px 2px;
-              transition-duration: 0.4s;
-              cursor: pointer;
-            }
-            
-            .button1 {
-              background-color: white;
-              color: black;
-              border: 2px solid #e7e7e7; color: black;;
-            }
-            
-            .button1:hover {
-              background-color: #e7e7e7; color: black;;
-              color: white;
-            }
-        </style>
-        <title>
-            Book-8
-        </title>
-    </head>
-    <body style="background-color: white;" >
+<body style="background-color: white;">
     <div class="flex-container">
-      
-      <img src="/static/images/B8.jpg" width="250" height="370" class="imgmod">
-  
+
+        <img src="/static/images/B8.jpg" width="250" height="370" class="imgmod">
+
         <div class="box">
-        <h1 style="color: black;" class="cental"><b><u>The Alchemist</u></b></h1>
-        <h2 class="cental"><u>Price</u>:Rs350</h2>
-        <h2 class="cental"><u>Description</u>:</h2>
-        <p class="cental" style="font-size: large;"><i>Every few decades a book is published that changes the lives of its readers forever. This is such a book a magical fable about learning to listen to your heart, read the omens strewn along life's path and, above all, follow your dreams.</i></p>
-        <p class="cental" style="font-size: large;"><i>This is the magical story of Santiago, an Andalusian shepherd boy who dreams of travelling the world in search of a worldly treasure as fabulous as any ever found. From his home in Spain he journeys to the markets of Tangiers, and from there into the Egyptian desert, where a fateful encounter with the alchemist awaits him.With Paulo Coelho's visionary blend of spirituality, magical realism and folklore,The Alchemist is a story with the power to inspire nations and change people's lives.</i></p>
-        <h2 class="cental"><u>Details</u>:</h2>
-        <ul class="cental" style="font-size: large;"><i>
+            <h1 style="color: black;" class="cental"><b><u>The Alchemist</u></b></h1>
+            <h2 class="cental"><u>Price</u>:Rs350</h2>
+            <h2 class="cental"><u>Description</u>:</h2>
+            <p class="cental" style="font-size: large;"><i>Every few decades a book is published that changes the lives of its readers forever. This is such a book a magical fable about learning to listen to your heart, read the omens strewn along life's path and, above all, follow your dreams.</i></p>
+            <p class="cental" style="font-size: large;"><i>This is the magical story of Santiago, an Andalusian shepherd boy who dreams of travelling the world in search of a worldly treasure as fabulous as any ever found. From his home in Spain he journeys to the markets of Tangiers, and from there into the Egyptian desert, where a fateful encounter with the alchemist awaits him.With Paulo Coelho's visionary blend of spirituality, magical realism and folklore,The Alchemist is a story with the power to inspire nations and change people's lives.</i></p>
+            <h2 class="cental"><u>Details</u>:</h2>
+            <ul class="cental" style="font-size: large;"><i>
         <li><b>Author:</b>Paulo Coelho</li>
         <li><b>ISBN-13:</b>9788172234980</li>
         <li><b>Binding:</b>Paperback</li>
@@ -74,12 +78,12 @@
         <li><b>Publisher:</b>Harper Collins India</li>
         <li><b>Language:</b>English</li>
       </i></ul>
-      </div>
-     </div> 
-      
-      <button class="button button1 cental " onclick="window.location.href='/cart'">Add to Cart</button>
+        </div>
+    </div>
 
-    </body>
-    
+    <button class="button button1 cental " onclick="window.location.href='/cart1'" onclick="cartadd()">Add to Cart</button>
+
+</body>
+
 </html>
 {% endblock content %}

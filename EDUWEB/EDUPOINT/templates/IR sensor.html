@@ -1,74 +1,84 @@
-{% extends "layout.html" %}
-{% block content  %}
+{% extends "layout.html" %} {% block content %}
 <html>
+
 <head>
-<style>
-	
-	h1{border-width:7px;
-		border-top-color:blue;
-		border-bottom-color:blue;
-		border-left-color:#0FA6F2;
-		border-right-color:#0FA6F2;
-		border-style:solid;
-		padding:15px;
-		background-color:#0FA6F2;
-	}
-	body{background-color:white;
-		padding: 60px;}
-	.central{text-align:left;
-			}
-	
-	.center{text-align:center;}		
-	
-	.imgmod{
-	float:left;
-	border:5px solid black;
-	margin:25px 25px 0px 0px;
-	}
-	
-	.button{
-	border:none;
-	color:white;
-	padding:16px 32px;
-	text-align:center;
-	text-decoration:none;
-	display:inline-block;
-	font-size:;16px;
-	margin:4px 2px;
-	transition-duration:0.4s;
-	cursor:pointer;
-	}
-	
-	.button1{
-	background-color:white;
-	color:black;
-	border:2px solid grey;
-	color:black;
-	}
-	
-	.button1:hover{
-	
-	background-color:#e7e7e7;
-	color:black;
-	}
-</style>
-<title>IR Sensor</title>
+    <style>
+        h1 {
+            border-width: 7px;
+            border-top-color: blue;
+            border-bottom-color: blue;
+            border-left-color: #0FA6F2;
+            border-right-color: #0FA6F2;
+            border-style: solid;
+            padding: 15px;
+            background-color: #0FA6F2;
+        }
+        
+        body {
+            background-color: white;
+            padding: 60px;
+        }
+        
+        .central {
+            text-align: left;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .imgmod {
+            float: left;
+            border: 5px solid black;
+            margin: 25px 25px 0px 0px;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: ;
+            16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid grey;
+            color: black;
+        }
+        
+        .button1:hover {
+            background-color: #e7e7e7;
+            color: black;
+        }
+    </style>
+    <title>IR Sensor</title>
 </head>
+
 <body>
 
-<div class="center">
-<p><h1><b><u>IR Sensor</u></b></h1></p>
-</div>
+    <div class="center">
+        <p>
+            <h1><b><u>IR Sensor</u></b></h1>
+        </p>
+    </div>
 
-<img src="/static/Img/IR sensor.jpg" width="375" height="500" class="imgmod">
+    <img src="/static/Img/IR sensor.jpg" width="375" height="500" class="imgmod">
 
-<h2 class="central"><u>Price:</u>₹ 140.00</h2>
+    <h2 class="central"><u>Price:</u>₹ 140.00</h2>
 
-<h2 class="central"><u>Description:</u></h2>
-<p class="central"><i>1 x IR proximity or obstacle sensor module product overview. This is a multipurpose infrared sensor which can be used for obstacle sensing, line sensing, etc. and also as an encoder sensor. The sensor provides a digital output. The sensor outputs a logic one (+3.5V) at the digital output when an object is placed in front of the sensor and logic zero (0V), when there is no object in front of the sensor. An onboard LED is used to indicate the presence of an object. This IR proximity or obstacle sensor is designed to work with almost all Arduino boards and microcontrollers - AVR, PIC, 8051, ARM etc. Operating Voltage: 5V. Adjustable range using preset (potentiometer on board). Since the sensor module works on infrared, for obstacles with reflective surfaces (white colored), the maximum range will be higher and for non-reflective surfaces (black colored) and the maximum range will be lower.</i></p>
+    <h2 class="central"><u>Description:</u></h2>
+    <p class="central"><i>1 x IR proximity or obstacle sensor module product overview. This is a multipurpose infrared sensor which can be used for obstacle sensing, line sensing, etc. and also as an encoder sensor. The sensor provides a digital output. The sensor outputs a logic one (+3.5V) at the digital output when an object is placed in front of the sensor and logic zero (0V), when there is no object in front of the sensor. An onboard LED is used to indicate the presence of an object. This IR proximity or obstacle sensor is designed to work with almost all Arduino boards and microcontrollers - AVR, PIC, 8051, ARM etc. Operating Voltage: 5V. Adjustable range using preset (potentiometer on board). Since the sensor module works on infrared, for obstacles with reflective surfaces (white colored), the maximum range will be higher and for non-reflective surfaces (black colored) and the maximum range will be lower.</i></p>
 
-<h2 class="central"><u>Details:</u></h2>
-<p class="central"><i>
+    <h2 class="central"><u>Details:</u></h2>
+    <p class="central"><i>
 <li><b>Item part number</b>:STL015V1_0
 <li><b>Number of parts:</b>1
 <li><b></b>Compatible with Ardiuno, Raspberry PI, ARM, AVR, PIC, 8051, etc.
@@ -79,9 +89,10 @@
 <li><b></b>Digital Output: Logic one (+3.5V DC) logic zero (0V DC)
 <li><b></b>This can in turn be used for detecting white or black lines (in line follower Robots) or bright or dark objects (in object identification Robots)
 </i>
-</p>	
+    </p>
 
-<p align="left"><button class="button button1 central" onclick="window.location.href='/cart'">Add To Cart</button></p>
+    <p align="left"><button class="button button1 central" onclick="window.location.href='/cart5'">Add To Cart</button></p>
 </body>
+
 </html>
 {% endblock content %}

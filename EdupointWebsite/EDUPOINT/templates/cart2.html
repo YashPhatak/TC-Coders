@@ -1,0 +1,80 @@
+{% extends "layout.html" %} {% block content %}
+<style>
+    h1 {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        size: 60px;
+    }
+    
+    #fixedbutton {
+        border: none;
+        color: blue;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: 25px 25px 0px 0px;
+        text-align: center;
+        font-family: arial;
+        float: left;
+    }
+    
+    .price {
+        color: grey;
+        font-size: 22px;
+    }
+    
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: red;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .card button:hover {
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+    <h1>
+        <center>CART PAGE</center>
+    </h1>
+    <div class="card">
+        <img src="/static/images/B8.jpg" style="width:100%">
+        <h2>The Alchemist</h2>
+        <p class="price">Rs350</p>
+        <p>A magical fable about learning to listen to your heart, read the omens strewn along life's path and, above all, follow your dreams.</p>
+        <p><button>REMOVE</button></p>
+    </div>
+
+    <div class="card">
+        <img src="/static/images/B4.jpg" style="width:100%">
+        <h2>The Lost Symbol</h2>
+        <p class="price">Rs399</p>
+        <p>A masterstroke of storytelling,brilliant novel written by American writer Dan Brown.</p>
+        <p><button onclick="window.location.href='/cart1'">REMOVE</button></p>
+    </div>
+    <footer>
+        <center><button id="fixedbutton" class="button" onclick="window.location.href='/checkout'">CHECKOUT</button>
+        </center>
+    </footer>
+</body>
+{% endblock content %}

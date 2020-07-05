@@ -25,6 +25,32 @@ def cart():
     else:
         return redirect(url_for('login'))
 
+@app.route("/cart1")
+def cart1():
+    return render_template('cart1.html', title='Cart')
+
+@app.route("/cart2")
+def cart2():
+    return render_template('cart2.html', title='Cart')
+
+@app.route("/cart3")
+def cart3():
+    return render_template('cart3.html', title='Cart')
+
+@app.route("/cart4")
+def cart4():
+    return render_template('cart4.html', title='Cart')
+
+
+
+@app.route("/checkout")
+def checkout():
+    if current_user.is_authenticated:    
+        return render_template('checkout.html',title='Checkout')
+    else:
+        return redirect(url_for('login'))
+
+
 @app.route("/home/menu")
 def menu():
     return render_template('menu.html', title='Menu')

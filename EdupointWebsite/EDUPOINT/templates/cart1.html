@@ -6,6 +6,22 @@
         size: 60px;
     }
     
+    #fixedbutton {
+        border: none;
+        color: blue;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+    
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         max-width: 300px;
@@ -35,39 +51,23 @@
     .card button:hover {
         opacity: 0.7;
     }
-    
-    .button {
-        border: none;
-        color: blue;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 25px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-    
-    .button4 {
-        border-radius: 12px;
-    }
 </style>
 
 <body>
     <h1>
         <center>CART PAGE</center>
     </h1>
-
-    <center>
-        <h2>
-            Your Cart Is Empty!!
-        </h2>
-        <button class="button button4" onclick="window.location.href='/home'">SHOP NOW</button>
-    </center>
+    <div class="card">
+        <img src="/static/images/B8.jpg" style="width:100%">
+        <h2>The Alchemist</h2>
+        <p class="price">Rs350</p>
+        <p>A magical fable about learning to listen to your heart, read the omens strewn along life's path and, above all, follow your dreams.</p>
+        <p><button>REMOVE</button></p>
+    </div>
     <footer>
-        <center><button class="button" onclick="window.location.href='/checkout'">CHECKOUT</button>
+        <center><button id="fixedbutton" class="button" onclick="window.location.href='/checkout'">CHECKOUT</button>
         </center>
     </footer>
+
 </body>
 {% endblock content %}
