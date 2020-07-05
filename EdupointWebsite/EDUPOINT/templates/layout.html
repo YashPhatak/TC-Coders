@@ -157,6 +157,7 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         {% if current_user.is_authenticated %}
+                        <li class="active"><a href="{{ url_for('account') }}">Welcome {{current_user.username}}</a></li>
                         <li><a class="nav-item nav-link" href="{{ url_for('account') }}"><span class="glyphicon glyphicon-user"></span>  Account</a></li>
                         <li><a class="nav-item nav-link" href="{{ url_for('cart') }}"><span class="glyphicon glyphicon-shopping-cart"></span>  Cart</a></li>
                         <li><a class="nav-item nav-link" href="{{ url_for('logout') }}"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>

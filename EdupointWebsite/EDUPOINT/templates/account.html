@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
+
 <style>body{padding: 60px;}</style>
 <div class="content-section">
     <div class="media">
+        <h1 style="text-align: center;" class="jumbotron" >Hi {{current_user.username}} !!!</h1>
       <img class="rounded-circle account-img" src="{{image_file}}">
       <div class="media-body">
         <h2 class="account-heading">{{current_user.username}}</h2>
