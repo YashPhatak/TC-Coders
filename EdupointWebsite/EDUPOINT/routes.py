@@ -16,8 +16,11 @@ def home():
 
 @app.route("/home/Contact Us")
 def contactus():
-    return render_template('contactus.html',title='Contact Us')    
+    return render_template('contactus.html',title='Contact Us')  
 
+@app.route("/confirm")
+def confirm():
+    return render_template('confirm.html',title='Order Confirmation')  
 @app.route("/cart")
 def cart():
     if current_user.is_authenticated:    
