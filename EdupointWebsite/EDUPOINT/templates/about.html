@@ -1,5 +1,70 @@
 {% extends "layout.html" %}
 {% block content %}
-<style>body{padding: 60px;}</style>
-    <h1>About Page</h1>
+
+<head>
+    <title>About Us</title>
+    <style type="text/css">
+    	h1{border-width:7px;
+		border-top-color:blue;
+		border-bottom-color:blue;
+		border-left-color:#0FA6F2;
+		border-right-color:#0FA6F2;
+		border-style:solid;
+		padding:15px;
+		background-color:#0FA6F2;
+	  text-align:center;
+     }
+    .img{width:100%;
+     max-width:1000px;
+     height:200px
+     }
+     .cat{width:150;
+             height:150px; 
+             margin:15px;
+              }
+     .found{width:100;
+                  height:100px; 
+                  float:left;
+	               margin:10px 10px 0px 0px;
+                   }
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+    <u><b><h1>ABOUT US</h1></b></u>
+    </div>
+
+    <div>
+    <img src="/static/About/logo.png"  class="img">        
+    </div>
+    
+    <div>
+    <b><h2>ABOUT US</h2></b> 
+   <h5><p>
+    Greetings Everyone , Since we know the value of education and how crucial it is we here at Edu Point strive to give you the best quality Educational products at affordable rates so that you can excel in your carrear as well as life.<br><br>
+
+Founded by Yash , Shubham , Onkar , Aniket in May 2020 its vision is to provide high quality educational products ranging from stationary , engineering equipments to fiction and non-fiction books to every and any student. 
+    </h5></p></div>
+    <div>
+    <h3>Our categories are :</h3>
+    <img src="/static/About/stationary.jpg" class="cat">
+     <img src="/static/About/engineeringequipments.jpg" class="cat">
+    <img src="/static/About/VJTIbooks.jpg" class="cat">
+    <img src="/static/About/books.jpg" class="cat">
+    </div>
+
+     <h3>The Founders :</h3>
+<img src="/static/About/Yash.jpg" class="found"><br><p>Yash Phatak<br>VJTI FY BTech EXTC</p><br><br><br>
+<img src="/static/About/Shubham.jpg" class="found"><br><p>Shubham Ghode<br>FY BTech EXTC</p><br><br<br><br><br>
+<img src="/static/About/Onkar.png" class="found"><br><p>Onkar Punwatkar<br>FY BTech EXTC  </p><br><br><br>    
+<img src="/static/About/Aniket.jpg" class="found"><br><p>Aniket Mahadik<br>FY BTech EXTC  </p><br><br>
+</div>
+
+
+</body>
+
+
 {% endblock content %}
