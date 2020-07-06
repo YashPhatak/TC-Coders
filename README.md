@@ -23,7 +23,7 @@
 * General Books
 * Stationary
 * Engineering Equipments
-f Home
+
 ## Usage
 
 * After setting up the project and running the application using **run.py**, Homepage of Website appears.   
