@@ -35,7 +35,7 @@
 
 Depending on the need of the user, one can view the products accordingly.
 
-##Future Scope
+## Future Scope
 
 Project **EduPoint** has immense oppurtunites considering the near future.
 * This project can be improved by adding the feature of "second hand books" to create a student friendly platform for opting the second hand books.
