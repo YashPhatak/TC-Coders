@@ -34,6 +34,14 @@
 * The user can see all the categories in dropdown named **Categories**.
 
 Depending on the need of the user, one can view the products accordingly.
+
+##Future Scope
+
+Project **EduPoint** has immense oppurtunites considering the near future.
+* This project can be improved by adding the feature of "second hand books" to create a student friendly platform for opting the second hand books.
+* It emphasizes on easy availability and accessibility of books and other materials required by college students,thus reducing their effort for acquiring these resources by other means.
+* We are trying round the clock to improve our facilities and expansion of our site to include books for all years of B.Tech degree education.Currently we have started with FY B.Tech.
+* **EduPoint** is a sincere effort from our team to reduce the efforts of finding curriculum related books,accessories and equipments exclusively on a single budget-friendly platform.
  
 
 
