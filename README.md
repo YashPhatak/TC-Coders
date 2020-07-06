@@ -16,6 +16,14 @@
 * Rasika
 * Sarakshi
 
+## Technology Stack
+
+1. Front end-webdevolupment-HTML
+2. Front end-webdevolupment-CSS
+3. Front end-webdevolupment-Javascript
+4. Backend-Flask in Python
+5. Database-mysql in pyhton
+
 ## Description
 
 **EduPoint** is a Website which provides Educational Products.Currently, it has 4 Categories of products.
@@ -23,6 +31,10 @@
 * General Books
 * Stationary
 * Engineering Equipments
+
+* GitHub repo link:
+* Drive link: https://drive.google.com/drive/folders/1BVGuVsfKCKZ7kBkcaPW-Lx2p3VsgUz4j?usp=sharing
+* Website link:
 
 ## Usage
 
@@ -35,6 +47,14 @@
 
 Depending on the need of the user, one can view the products accordingly.
 
+## Applications
+
+1. EDUPOINT has all the educational products required by students.
+2. Contains a wide variety products so no need for students to go to various shops for the same.
+3. The site focuses only on educational-goods so no chance of missing out on any products.
+4. The site even contains local college equipments and devices which are not even available on many E-shop giants.
+5. The site even contains those books which are exclusivly available to some colleges.
+
 ## Future Scope
 
 Project **EduPoint** has immense oppurtunites considering the near future.
@@ -42,7 +62,10 @@ Project **EduPoint** has immense oppurtunites considering the near future.
 * It emphasizes on easy availability and accessibility of books and other materials required by college students,thus reducing their effort for acquiring these resources by other means.
 * We are trying round the clock to improve our facilities and expansion of our site to include books for all years of B.Tech degree education.Currently we have started with FY B.Tech.
 * **EduPoint** is a sincere effort from our team to reduce the efforts of finding curriculum related books,accessories and equipments exclusively on a single budget-friendly platform.
- 
+
+## Screenshots
+
+https://drive.google.com/drive/folders/1BVGuVsfKCKZ7kBkcaPW-Lx2p3VsgUz4j?usp=sharing
 
 
 
