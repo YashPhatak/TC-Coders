@@ -18,3 +18,10 @@
 
 ## Description
 
+**EduPoint** is a Website which provides Educational Products.Currently, it has 4 Categories of products.
+* VJTI Books
+* General Books
+* Stationary
+* Engineering Equipments
+
+
