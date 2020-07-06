@@ -1,6 +1,6 @@
 # EduPoint
 
-## Team Name:TC Coders
+## Team Name : TC Coders
 
 ## Team Members
 
@@ -15,3 +15,6 @@
 * Janvi
 * Rasika
 * Sarakshi
+
+## Description
+
