@@ -1,2 +1,2 @@
-# TC-Coders
-Edu-Point
+# EduPoint
+_Team Name:TC Coders_
