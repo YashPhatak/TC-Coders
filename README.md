@@ -34,8 +34,7 @@ f Home
 * The user can see all the categories in dropdown named **Categories**.
 
 Depending on the need of the user, one can view the products accordingly.
-
-* 
+ 
 
 
 
