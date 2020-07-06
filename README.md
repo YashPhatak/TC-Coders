@@ -4,10 +4,10 @@
 
 ## Team Members
 
-* Yash Phatak     - yashsameerphatak@gmail.com
-* Shubham Ghode   - shubham.ghode@rediffmail.com
-* Onkar Punwatkar - punwatkaron@gmail.com
-* Aniket Mahadik  - mahadikaniket15@gmail.com
+* Yash Phatak      -  yashsameerphatak@gmail.com
+* Shubham Ghode    -  shubham.ghode@rediffmail.com
+* Onkar Punwatkar  -  punwatkaron@gmail.com
+* Aniket Mahadik   -  mahadikaniket15@gmail.com
 
 ## Mentors
 
