@@ -1,1 +1,1 @@
-web: gunicorn edupointweb:app
+web: gunicorn edupointweb:app --log-file=-
