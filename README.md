@@ -35,7 +35,7 @@
 
 * GitHub repo link: https://github.com/YashPhatak/TC-Coders
 * Drive link: https://drive.google.com/drive/folders/1BVGuVsfKCKZ7kBkcaPW-Lx2p3VsgUz4j?usp=sharing
-* Website link:
+* Website link:https://edupointweb.herokuapp.com
 
 ## Usage
 
