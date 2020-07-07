@@ -33,7 +33,7 @@
  Lastly our team wishes good luck to to you all users for your bright future, and ofcourse we are here for helping you out while facing any difficulty during handling this website.
 
 * GitHub repo link: https://github.com/YashPhatak/TC-Coders
-* Drive link: https://drive.google.com/file/d/1hoZn9E8qPIv6zWCMjtAEIzQf3yIzS8II/view?usp=sharing
+* Drive link: https://drive.google.com/drive/folders/1BVGuVsfKCKZ7kBkcaPW-Lx2p3VsgUz4j?usp=sharing
 * Website link:https://edupointweb.herokuapp.com
 
 ## Project Setup
