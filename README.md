@@ -82,7 +82,7 @@ Project **EduPoint** has immense oppurtunites considering the near future.
 
 ## Screenshots
 
-Sneak-peek or our website below!!
+Sneak-peek of our website below!!
 
 https://drive.google.com/file/d/1hoZn9E8qPIv6zWCMjtAEIzQf3yIzS8II/view?usp=sharing
 
