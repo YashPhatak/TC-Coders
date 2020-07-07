@@ -18,18 +18,19 @@
 
 ## Technology Stack
 
-1. Front end-webdevolupment-HTML
-2. Front end-webdevolupment-CSS
-3. Front end-webdevolupment-Javascript
-4. Backend-Flask in Python
-5. Database-mysql in pyhton
+1. Front end-webdevelopment-HTML
+2. Front end-webdevelopment-CSS
+3. Front end-webdevelopment-Javascript
+4. Front end-webdevelopment-Bootstrap
+5. Backend-Flask in Python
+6. Database-mysql in pyhton
 
 ## Description
 
 **EduPoint** is a Website which provides Educational Products.Currently, it has 4 Categories of products.
 * VJTI Books
 * General Books
-* Stationary
+* Stationery
 * Engineering Equipments
 
 * GitHub repo link: https://github.com/YashPhatak/TC-Coders
