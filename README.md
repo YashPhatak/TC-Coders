@@ -84,8 +84,7 @@ Project **EduPoint** has immense oppurtunites considering the near future.
 
 Sneak-peek of our website below!!
 
-https://drive.google.com/file/d/1hoZn9E8qPIv6zWCMjtAEIzQf3yIzS8II/view?usp=sharing
-
+https://drive.google.com/drive/folders/1BVGuVsfKCKZ7kBkcaPW-Lx2p3VsgUz4j?usp=sharing
 
 
 
