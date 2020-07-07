@@ -27,7 +27,7 @@
 
  All the above mentioned products will  be delivered to the consumer with superior quality and at a reasonable price.Our Website also aims at supplying brand new high quality engineering equipments to colleges in order to improve the quality of practical education imparted to students.
 
- Currently, we are having a dummy cart page. We are also working harder to make this website and cart more responsive,user-friendly and make the layout of website compatible with different devices used.
+ Currently, we are having a dummy cart page.We are also working harder to make this website and cart more responsive,user-friendly and make the layout of website compatible with different devices used.
 
 
  Lastly our team wishes good luck to you all users for your bright future, and ofcourse we are here for helping you out while facing any difficulty during handling this website.
