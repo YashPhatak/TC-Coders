@@ -18,15 +18,19 @@
 
 ## Description
 
-**Edupoint** literally means education collected at single place. Edupoint is the website which provides educational products that will help you in your studies and career as well.  Website also contains some stuff which is beyond your studies;just to build your all round personality and to light the spark of interest in other ideologies. Website is providing the digital platform for your studies, and also for making it cheerful , wonderful and awesome.As our life is the mixture of all the emotions such as  happiness , sadness and so on ; this website also has mixture of so many educational stuff and accessories and what not . Currently the website has 4 categories  of products
-   VJTI books 
-   General books
-   Stationary Products
-   Engineering Equipments
-All the above mentioned products will  be delivered to the consumer with superior quality and at a reasonable price.
-Our Website also aims at supplying brand new high quality engineering equipments to colleges to improve the practical education imparted to students using poorly maintained equipments.
-We are working harder to make this website more responsive,user-friendly and make the layout of website compatible with different devices used.
-Lastly our team wishes good luck to to you all users for your bright future, and ofcourse we are here for helping you out while facing any difficulty during handling this website.
+**Edupoint** literally means education collected at single place. Edupoint is the website which provides educational products that will help you in your studies and career as well.  Website also contains some stuff which is beyond your studies;just to build your all round personality and to light the spark of interest in other ideologies. Website is providing the digital platform for your studies, and also for making it cheerful , wonderful and awesome.As our life is the mixture of all the emotions such as  happiness , sadness and so on ; this website also has mixture of so many educational stuff and accessories and what not . Currently the website has 4 categories  of products:
+
+1. VJTI books 
+2. General books
+3. Stationary Products
+4. Engineering Equipments
+
+ All the above mentioned products will  be delivered to the consumer with superior quality and at a reasonable price.Our Website also aims at supplying brand new high quality engineering equipments to colleges in order to improve the quality of practical education imparted to students.
+
+ We are also working harder to make this website more responsive,user-friendly and make the layout of website compatible with different devices used.
+
+
+ Lastly our team wishes good luck to to you all users for your bright future, and ofcourse we are here for helping you out while facing any difficulty during handling this website.
 
 * GitHub repo link: https://github.com/YashPhatak/TC-Coders
 * Drive link: https://drive.google.com/file/d/1hoZn9E8qPIv6zWCMjtAEIzQf3yIzS8II/view?usp=sharing
