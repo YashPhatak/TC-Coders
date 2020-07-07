@@ -30,7 +30,7 @@
  Currently, we are having a dummy cart page. We are also working harder to make this website and cart more responsive,user-friendly and make the layout of website compatible with different devices used.
 
 
- Lastly our team wishes good luck to to you all users for your bright future, and ofcourse we are here for helping you out while facing any difficulty during handling this website.
+ Lastly our team wishes good luck to you all users for your bright future, and ofcourse we are here for helping you out while facing any difficulty during handling this website.
 
 * GitHub repo link: https://github.com/YashPhatak/TC-Coders
 * Drive link: https://drive.google.com/drive/folders/1BVGuVsfKCKZ7kBkcaPW-Lx2p3VsgUz4j?usp=sharing
